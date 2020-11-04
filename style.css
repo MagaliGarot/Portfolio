@@ -196,6 +196,12 @@ z-index: 2;
     border-radius: 30px;
 }
 
+.Apropos_textone_bottom{
+    color: lightgray;
+    font-size: 1.3em;
+    margin-top: 1.7vw;
+}
+
 .Apropos--image_link{
     height: 20vw;
     margin-right: 50px;
@@ -310,7 +316,6 @@ footer p {
         right: 0;
         bottom: 0;
         display: block;
-        background-image: url("../sitecv/Images/banniere.png");
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 0;
@@ -419,7 +424,6 @@ footer p {
         right: 0;
         bottom: 0;
         display: block;
-        background-image: url("../sitecv/Images/banniere.png");
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 0;
