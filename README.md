@@ -8,11 +8,7 @@ My portfolio
 # Le projet :
 
 Réalisation d'un Portfolio en HTML, CSS et JavaScript pendant la formation BeCode de Liège.
-Il s'agit d'un projet personnel, développé en plus pendant la formation.
-
-## Lien vers l'exercice
-https://github.com/MagaliGarot/LIE-Hamilton-4.25/blob/master/01-main-course/01-the-field/04-html-css/01-fundamentals/05-curriculum-vitae.md
-
+Il s'agit d'un projet personnel, développé pendant la formation.
 
 ## Langages 
 * HTML
