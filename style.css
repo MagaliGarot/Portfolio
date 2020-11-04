@@ -1,0 +1,489 @@
+/*Général*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+
+      /*Parallax --> element racine*/
+      overflow: hidden;
+}
+/*FONTS*/
+h1 {
+    font-size: 4em;
+    font-family: 'Lekton', sans-serif;
+    padding: 10px 10px;
+}
+
+h2 {
+    font-size: 3em;
+    color: lightblue;
+    font-family: 'Lekton', sans-serif;
+    padding-bottom: 40px;    
+}
+
+h3 {
+    font-size: 2em;
+    color: orange;
+    font-family: 'Lekton', sans-serif;
+    padding-bottom: 40px;    
+}
+
+p {
+    font-family: Helvetica;
+    color: gray;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/*BODY*/ 
+body {
+    width: 100%;
+    height: 100%;
+        /*Parallax profondeur */
+    perspective: 4px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+ }
+
+ header {
+    width: 100%;
+    min-height: 130vh;
+    position: relative;
+
+      /*Parallax*/
+      transform-style: preserve-3d;
+ }
+
+ header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-image: url("../Portfolio/Images/banniere.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+        /*Parallax*/
+        transform: translateZ(-4px);
+        transform: translateZ(-4px) scale(2.1); /*corrige taille image*/
+ }
+
+ #Accueil {
+    position: absolute;
+    z-index: 1;
+    top: 17%;
+    padding: 0 30px;
+
+       /*Parallax*/
+       transform: translateZ(-2px);
+       transform: translateZ(-2px) scale(1.8); /*corrige taille texte*/
+ }
+
+ .Accueil--name{
+    font-size: 5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: white;
+ }
+
+ .Accueil--webDev{
+    font-size: 3rem;
+    color: lightblue;
+ }
+
+ .icones{
+    margin-top: 3%;;
+    margin-right: 3%;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    justify-content: right;
+}
+
+     
+ .icones_icones{
+     font-size: 4em;
+     color: white;
+ }
+
+ .icones_icones:hover{
+    font-size: 5em;
+    color: plum;
+}
+
+.objectifText{
+    width: 33vw;
+    margin-top: 33%;
+    float: right;
+    position: relative;
+    z-index: 4;
+    justify-content: right;
+    /*TEXT*/
+    color: white;
+    font-family: Helvetica;
+    font-size: 1.6em;
+    font-weight: 500;
+    /*BORDER*/
+    border: 1px;
+    border-style: none none none solid;
+    border-color: white;
+    /*PADDING*/
+    padding: 3px 30px;
+}
+
+
+    /*CONTAINER FLEX*/
+#Menu{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+    /*Button*/
+.Menu_link{
+    height: 3vw;
+    width: 10vw;
+    background-color: black;
+    text-align: center;
+    padding: 10px 10px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lekton', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/*MAIN*/
+
+section{
+width: 100%;
+background: white;
+/*Prallax*/
+position: relative;
+z-index: 2;
+}
+
+.espacewhite{
+    background-color: white;
+    height: 8vw;
+}
+
+#Apropos{
+    display: flex;
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1000px; 
+    padding: 50px 50px;
+    background-color: black;
+    /* background-image: linear-gradient( rgba(255, 255, 255, 0), rgb(0, 0, 0)); */
+    border-radius: 30px;
+}
+
+.Apropos--image_link{
+    height: 20vw;
+    margin-right: 50px;
+}
+
+
+.Apropos--image_link:hover{
+    -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(278deg);
+    filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(278deg);
+    height: 22vw;
+}
+
+    /*COMPETENCES*/
+
+#Competences{
+    max-width: 100%; 
+    margin-top: 150px;
+    padding: 80px 80px;
+    background-color: black;
+    color: lightgray;
+}
+
+.Competences--flex{
+    display: flex;
+    justify-content: center;
+}
+
+.Competences--flex_dev{
+    margin-right: 300px;
+}
+
+.Competences--flex_dev_ione{
+    
+    background-repeat: no-repeat;
+    
+}
+
+.Competences--flex_logiciel{
+    margin-right: 300px;
+}
+
+#Formations{
+    width: 100%; 
+    height: 800px;
+    padding: 80px 30px;
+    background-image: url("../Portfolio/Images/bannière2.png");
+    background-repeat: no-repeat;
+    background-position-y: 65%;
+    background-size: cover;
+    
+}
+
+.Formations_text{
+    margin: auto; 
+    max-width: 1000px; 
+    padding: 80px 30px;
+    
+}
+
+#Travaux{
+    margin: auto; 
+    max-width: 1000px; 
+    padding: 80px 30px;
+}
+
+
+#Graphisme{
+    margin: auto; 
+    max-width: 1000px; 
+    padding: 80px 30px;
+}
+
+
+#Contact{
+    margin: auto; 
+    max-width: 1000px; 
+    padding: 80px 30px;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #D9CFE8;
+    padding: 25px 25px 25px 0px; 
+}
+
+footer p {
+    font-size: 15px;
+    width: 300px;
+    margin-left: 25px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 1315px) {
+    /*HEADER*/
+    header {
+        display: flex;
+        flex-direction: column;
+        min-height: 130vh;
+        position: relative;
+          /*Parallax*/
+        transform-style: preserve-3d;
+     }
+     
+     header::before { 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background-image: url("../sitecv/Images/banniere.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+    
+            /*Parallax*/
+            transform: translateZ(-2px);
+            transform: translateZ(-4px) scale(2.1); /*corrige taille image*/
+     }
+
+     #Accueil {
+        position: absolute;
+        z-index: 1;
+        top: 17%;
+        padding: 0 30px;
+    
+           /*Parallax*/
+           transform: translateZ(-2px);
+           transform: translateZ(-2px) scale(1.2); /*corrige taille texte*/
+     }
+    
+     .Accueil--name{
+        font-size: 5rem;
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: white;
+     }
+    
+     .Accueil--webDev{
+        font-size: 3rem;
+        color: lightblue;
+     }
+
+     .objectifText{
+        padding: 120px 30px;;
+        width: 50vw;
+        position: relative;
+        z-index: 4;
+        justify-content: right;
+        /*TEXT*/
+        color: white;
+        font-family: Helvetica;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    .icones{
+        margin-top: 30px;;
+        margin-left: 30px;
+        position: relative;
+        z-index: 5;
+    }
+    
+         
+     .icones_icones{
+         font-size: 3em;
+         color: white;
+     }
+    
+     .icones_icones:hover{
+        font-size: 4em;
+        color: plum;
+     }
+        
+    /*CONTAINER FLEX*/
+
+    /*Button*/
+    .Menu_link{
+        height: 5vw;
+        width: 20vw;
+        background-color: black;
+        text-align: center;
+        padding: 10px 10px;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-family: 'Lekton', sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 800px) {
+    
+    /*HEADER*/
+    header {
+        display: flex;
+        flex-direction: column;
+        min-height: 130vh;
+        position: relative;
+          /*Parallax*/
+        transform-style: preserve-3d;
+     }
+     
+     header::before { 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background-image: url("../sitecv/Images/banniere.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+    
+            /*Parallax*/
+            transform: translateZ(-2px);
+            transform: translateZ(-4px) scale(2.1); /*corrige taille image*/
+     }
+
+     #Accueil {
+        position: absolute;
+        z-index: 1;
+        top: 17%;
+        padding: 0 30px;
+    
+           /*Parallax*/
+           transform: translateZ(-2px);
+           transform: translateZ(-2px) scale(1.2); /*corrige taille texte*/
+     }
+    
+     .Accueil--name{
+        font-size: 5rem;
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: white;
+     }
+    
+     .Accueil--webDev{
+        font-size: 3rem;
+        color: lightblue;
+     }
+
+     .objectifText{
+        padding: 300px 30px;;
+        width: 70vw;
+        position: relative;
+        z-index: 4;
+        justify-content: right;
+        /*TEXT*/
+        color: white;
+        font-family: Helvetica;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .icones{
+        display: flex;
+        margin-top: 30px;;
+        margin-left: 30px;
+        position: relative;
+        z-index: 5;
+    }
+    
+         
+     .icones_icones{
+         font-size: 3em;
+         color: white;
+     }
+    
+     .icones_icones:hover{
+        font-size: 4em;
+        color: plum;
+     }
+
+        /*Button*/
+
+}
