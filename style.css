@@ -40,6 +40,11 @@ p {
     font-weight: 500;
 }
 
+li{
+    font-family: Helvetica;
+    font-size: 1.2em;
+}
+
 /*BODY*/ 
 body {
     width: 100%;
@@ -101,6 +106,7 @@ body {
  }
 
  .icones{
+    height: 50px;
     margin-top: 3%;;
     margin-right: 3%;
     display: flex;
@@ -119,7 +125,7 @@ body {
 
  .icones_icones:hover{
     font-size: 5em;
-    color: plum;
+    color:#d093d2;
 }
 
 .objectifText{
@@ -142,8 +148,8 @@ body {
     padding: 3px 30px;
 }
 
-
     /*CONTAINER FLEX*/
+
 #Menu{
     position: relative;
     z-index: 3;
@@ -156,6 +162,7 @@ body {
 }
 
     /*Button*/
+
 .Menu_link{
     height: 3vw;
     width: 10vw;
@@ -168,6 +175,12 @@ body {
     font-family: 'Lekton', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
+}
+
+.Menu_link:hover{
+    color:#ff8fbe;
+    font-weight: 800;
+    font-size: 1.6em;
 }
 
 /*MAIN*/
@@ -207,7 +220,6 @@ z-index: 2;
     margin-right: 50px;
 }
 
-
 .Apropos--image_link:hover{
     -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(278deg);
     filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(278deg);
@@ -224,22 +236,30 @@ z-index: 2;
     color: lightgray;
 }
 
-.Competences--flex{
+    /* IMAGE*/
+
+.Competences--flexpicture{
+    display: flex;
+    justify-content: center;
+    max-width: 100%; 
+}
+
+    .Competences--flexpicture_one{
+        background-image: url("../Portfolio/Images/icones_contour.png");
+        background-repeat: no-repeat;
+        width: 2000px;
+    }
+
+.Competences--flextext{
     display: flex;
     justify-content: center;
 }
 
-.Competences--flex_dev{
+.Competences--flex--dev{
     margin-right: 300px;
 }
 
-.Competences--flex_dev_ione{
-    
-    background-repeat: no-repeat;
-    
-}
-
-.Competences--flex_logiciel{
+.Competences--flex--logiciel{
     margin-right: 300px;
 }
 
@@ -261,7 +281,7 @@ z-index: 2;
     
 }
 
-#Travaux{
+#Portfolio{
     margin: auto; 
     max-width: 1000px; 
     padding: 80px 30px;
