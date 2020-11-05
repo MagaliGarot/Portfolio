@@ -28,9 +28,10 @@ h2 {
 
 h3 {
     font-size: 2em;
-    color: orange;
+    color:#ffb768;
     font-family: 'Lekton', sans-serif;
     padding-bottom: 40px;    
+    text-align: center;
 }
 
 p {
@@ -226,29 +227,50 @@ z-index: 2;
     height: 22vw;
 }
 
-    /*COMPETENCES*/
+    /*COMPETENCES --> container principale*/
 
 #Competences{
     max-width: 100%; 
     margin-top: 150px;
-    padding: 80px 80px;
+    padding: 2% 2%;
     background-color: black;
     color: lightgray;
 }
 
-    /* IMAGE*/
+    /* COMPETENCES --> IMAGE*/
 
-.Competences--flexpicture{
-    display: flex;
-    justify-content: center;
-    max-width: 100%; 
-}
-
-    .Competences--flexpicture_one{
-        background-image: url("../Portfolio/Images/icones_contour.png");
-        background-repeat: no-repeat;
-        width: 2000px;
+    .Competences--flex--dev_pictureone{
+        width: 20vw;
+        height: 20vw;
+        background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/languagesweb.png");
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 20vw, 19vw;
+        background-position: center, center;
+        margin-bottom: 40px;
     }
+
+    .Competences--flex--logiciel_picturetwo{
+        width: 20vw;
+        height: 20vw;
+        background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesordinateur.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 20vw, 13vw;
+        background-position: center, center;
+        margin-bottom: 40px;
+    }
+
+    .Competences--flex--SoftSkill_picturethree{
+        width: 20vw;
+        height: 20vw;
+        background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesprofil.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 20vw, 11vw;
+        background-position: center, center;
+        margin-bottom: 40px;
+
+    }
+
+    /* COMPETENCES --> CONTAINER IMAGES ET LISTES*/
 
 .Competences--flextext{
     display: flex;
@@ -256,12 +278,39 @@ z-index: 2;
 }
 
 .Competences--flex--dev{
-    margin-right: 300px;
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .Competences--flex--logiciel{
-    margin-right: 300px;
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
 }
+
+.Competences--flex--SoftSkill{
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+ /* COMPETENCE --> LISTES*/
+
+ .Competences--flex--dev_listeone{
+   margin: 5% 30%;
+   font-weight: 600;
+ }
+
+ .Competences--flex--logiciel_listetwo{
+    margin: 5% 30%;
+    font-weight: 600;
+ }
+
+ .Competences--flex--SoftSkill_listethree{
+    margin: 5% 30%;
+    font-weight: 600;
+ }
 
 #Formations{
     width: 100%; 
@@ -369,17 +418,20 @@ footer p {
      }
 
      .objectifText{
-        padding: 120px 30px;;
-        width: 50vw;
+        padding: 30px 30px;
+        margin-left: 30px;
+        width: 70vw;
         position: relative;
         z-index: 4;
+        top: 500px;
         justify-content: right;
         /*TEXT*/
         color: white;
         font-family: Helvetica;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 500;
     }
+
 
     .icones{
         margin-top: 30px;;
@@ -477,10 +529,12 @@ footer p {
      }
 
      .objectifText{
-        padding: 300px 30px;;
+        padding: 30px 30px;
+        margin-left: 30px;
         width: 70vw;
         position: relative;
         z-index: 4;
+        top: 500px;
         justify-content: right;
         /*TEXT*/
         color: white;
@@ -508,6 +562,11 @@ footer p {
         color: plum;
      }
 
-        /*Button*/
+        /*COMPETENCE*/
+        .Competences--flextext{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
 }
