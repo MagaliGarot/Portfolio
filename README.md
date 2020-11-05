@@ -10,7 +10,7 @@ My portfolio
 Réalisation d'un Portfolio en HTML, CSS et JavaScript pendant la formation BeCode de Liège.
 Il s'agit d'un projet personnel, développé à côté de la formation.
 
-![<Visuel>](../Images/visuel.png)
+![<Visuel>](/Images/visuel.png)
 
 ## Langages 
 * HTML
