@@ -1,9 +1,9 @@
 # Portfolio
 My portfolio
 
-# Projet en cours de construction 
-
-# Lien vers le projet : //// A venir
+# Lien vers le projet : 
+Projet en construction
+https://magaligarot.github.io/Portfolio/
 
 # Le projet :
 
@@ -15,16 +15,20 @@ Il s'agit d'un projet personnel, développé à côté de la formation.
 ## Langages 
 * HTML
 * CSS
+* JavaScript
 
 ## Structure du projet
 * index.html
 * style.css
-
-* Javascript à venir
+* Javascript 
 
 ## A venir
 
-Améliorations en cours.
+Améliorations en cours: 
+
+Galerie d'illustrations 
+Footer 
+Nouveaux effets
 
 ## A propos :
 
