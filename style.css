@@ -381,6 +381,7 @@ z-index: 2;
  /* ---- PORTFOLIO -----*/
  /* Commentaire à rejouter dans les marhes + changer le fond ?*/
 #Portfolio{
+    width: 100%;
     max-width: 1000px; 
     /*MARGIN*/
     margin-top: -400px;
@@ -552,7 +553,28 @@ footer p {
         font-size: 1.5em;
     }
 
-    
+         /*COMPETENCE*/
+         .Competences--flextext{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+           /* ---- PORTFOLIO -----*/
+           #Portfolio{
+            width: 70%;
+            /*MARGIN*/
+            margin-top: -900px;
+            margin-left: auto; 
+            margin-right: auto;
+            padding: 50px 50px;
+            background-color: white;
+            border-radius: 30px;
+        }
+
+
 }
 
 
@@ -651,6 +673,27 @@ footer p {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+          /* ----  FORMATION -----*/
+        #Formations{
+            height: 80%;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+         /* ---- PORTFOLIO -----*/
+        #Portfolio{
+            width: 70%;
+            /*MARGIN*/
+            margin-top: -100px;
+            margin-left: auto; 
+            margin-right: auto;
+            padding: 50px 50px;
+            background-color: white;
+            border-radius: 30px;
         }
 
 }
