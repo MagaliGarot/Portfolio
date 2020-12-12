@@ -14,6 +14,10 @@ html{
       overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*-----------FONTS-----------*/
 
 h1 {
@@ -113,7 +117,7 @@ body {
  }
 
  
-/*-----------ACCUEIL ICONES GITHUB LN EMAIL-----------*/
+/*-----------ACCUEIL ICONES GITHUB - EMAIL-----------*/
 
  .icones{
     height: 50px;
@@ -134,8 +138,9 @@ body {
  }
 
   /* ----ICONES --> HOVER -----*/
+
  .icones_icones:hover{
-    font-size: 5em;
+    /* font-size: 5em; */
     color: #cc97a7;;
 }
 
@@ -181,7 +186,6 @@ body {
     text-align: center;
     padding: 10px 10px;
     border: none;
-    text-decoration: none;
     color: white;
     font-family: 'Lekton', sans-serif;
     font-weight: 700;
@@ -192,6 +196,7 @@ body {
     color:#cc97a7;;
     font-weight: 800;
     font-size: 1.6em;
+    text-decoration: none;
 }
 
 /*MAIN*/
@@ -254,6 +259,11 @@ z-index: 2;
     color:#ffb768;
 }
 
+.iconeorange{
+    color: #ffb768;
+    font-weight: 600;
+}
+
     /*--------COMPETENCES --> container principale---------*/
 
 #Competences{
@@ -296,7 +306,7 @@ z-index: 2;
         margin-bottom: 40px;
 
     }
-    /*----EFFET Souris icone competence----*/
+    /*----HOVER icone competence----*/
     .Competences--flex--dev_pictureone:hover{
         -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
         filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
@@ -418,11 +428,38 @@ z-index: 2;
     font-size: 1.2em;
 }
 
+ /*---------- Graphisme Carousel-------------*/
+
 #Graphisme{
     margin: auto; 
-    max-width: 1000px; 
+    max-width: 1000px;
+    height: 1100px; 
     padding: 80px 30px;
 }
+
+ /*----------Picture Carousel-------------*/
+ .avatarassis{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.femmeEscaliers{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.etudiante{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alveole{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
  /*----------CONTACT-------------*/
 
 #Contact{
@@ -453,6 +490,8 @@ footer p {
 
  /* ---- RESPONSIVE-----*/
 
+ /*-----MEDIA QUERIES-----*/
+/*---------TABLETTE---------*/
 @media screen and (max-width: 1315px) {
     /*HEADER*/
     header {
@@ -564,11 +603,20 @@ footer p {
             margin-left: auto;
         }
 
+        #Formations{
+            width: 100%; 
+            height: 1400px;
+            background-image: url("../Portfolio/Images/effetthree.png"), url("../Portfolio/Images/effettwo.png"), url("../Portfolio/Images/effetone.png");
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-size: 100%, 100%, 100%;
+            background-position-y: 60%, 60%, 60%;
+        }
+
            /* ---- PORTFOLIO -----*/
            #Portfolio{
             width: 70%;
             /*MARGIN*/
-            margin-top: -900px;
+            margin-top: 0px;
             margin-left: auto; 
             margin-right: auto;
             padding: 50px 50px;
@@ -580,10 +628,9 @@ footer p {
 }
 
 
+/*----------MEDIA QUERIES------------*/
 
-
-/*MEDIA QUERIES*/
-
+/*---------SMARTPHONE---------*/
 @media screen and (max-width: 800px) {
     
     /*HEADER*/
