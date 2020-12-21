@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -39,6 +40,14 @@ h3 {
     font-family: 'Lekton', sans-serif;
     padding-bottom: 40px;    
     text-align: center;
+}
+
+h4 {
+    font-size: 2em;
+    color:white;
+    font-family: 'Lekton', sans-serif;
+    padding-bottom: 40px;   
+    text-align: center; 
 }
 
 p {
@@ -384,14 +393,28 @@ z-index: 2;
     font-weight: 600;
 }
 
-.Formations--text_para_important{
+.Formations--text_para_importantone{
     color: #ffb768;
+    text-decoration: none;
 }
 
- /* ---- PORTFOLIO -----*/
- /* Commentaire à rejouter dans les marhes + changer le fond ?*/
+
+.Formations--text_para_importanttwo{
+    color: #448fae;
+    text-decoration: none;
+}
+
+    /* --Logo BeCode et Saint-Luc--*/
+.Formations--text_para_important_logo{
+    height: 70px;
+    text-decoration: none;
+}
+
+ /* -------- PORTFOLIO ---------*/
+
 #Portfolio{
     width: 100%;
+    height: 1000px;
     max-width: 1000px; 
     /*MARGIN*/
     margin-top: -400px;
@@ -402,31 +425,68 @@ z-index: 2;
     border-radius: 30px;
 }
 
-.Portfolio--text{
-    border-style: none none solid none;
-    border-color: #cc97a7;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
+/* ---- CARD PORTFOLIO-----*/
+
+#card{
+    /*CONTAINER CARD*/
+    position: absolute;
+    border: none;
+    /*SIZE CARD*/
+    width: 400px;
+    height: 680px;
+    background-color: white;
+    /*SHODOW*/
+    /*site : https://html-css-js.com/css/generator/box-shadow/*/
+    -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
+    box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
 }
 
-.Portfolio--text_liste{
-    margin-bottom: 50px;
+.card__box__color{
+    /*RECTANGLE DE COULEUR*/
+    width: 400px;
+    height: 200px;
+    background-color:#ff8c4e;
 }
 
-.Portfolio--text_liste_link{
-        text-decoration: none;
-        color: gray;
-        font-size: 1em;
-        border: 1px;
-        font-weight: 800;
+#card:hover .card__box__color{
+    background-color:#ff8ef4;
+}
+    /*FIRST TITLE (name project)*/
+.card__box__text__title{
+    padding-top: 20px;
+    
+}
+    /*SECOND TITLE (language)*/
+.card__box__text__language{
+    text-align: center;
+    font-weight: 800;
 }
 
-.Portfolio--text_liste_link:hover{
+.card__box__text{
+    margin: 20px 20px;
+}
+
+.card__box__text__link{
     text-decoration: none;
     color: #cc97a7;
-    font-size: 1.2em;
+    font-size: 1.6em;
+    font-weight: 800;
 }
+
+
+.card__box__text__link:hover{
+    text-decoration: none;
+    color:#ff8c4e;
+    font-size: 2em;
+}
+
+.card__box__text__titleS{
+    color: #ff8c4e;;
+    font-size: 1.6em;
+    font-weight: 800;
+    margin: 20px 20px;
+}
+
 
  /*---------- Graphisme Carousel-------------*/
 

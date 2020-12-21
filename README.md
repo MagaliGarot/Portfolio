@@ -23,12 +23,12 @@ Réalisation d'un Portfolio en HTML, CSS et JavaScript pendant la formation BeCo
 
 ## A venir
 
-Améliorations en cours: 
-
 * Portfolio
 * Galerie d'illustrations 
-* Footer 
+* Articles et vidéos
 * Contact
+* Footer 
+
 
 ## A propos :
 

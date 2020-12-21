@@ -7,7 +7,7 @@
     
     <head>
         <meta charset="utf-8" />
-        <title> CV Magali Garot </title>
+        <title> Portfolio Magali Garot </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
@@ -123,18 +123,22 @@
                             <h3>Developpement
                             </h3>
                             <ul class="Competences--flex--dev_listeone">
+                            <li>En étude :</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>Javascript (en étude)</li>
-                            <li>React (en étude)</li>
-                            <li>PHP (en étude)</li>
-                            <li>MySQL (en étude)</li>
-                            <li>WordPress (en étude)</li>
+                            <li>SASS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>WordPress</li>
+                            </br>
+                            <li>Bootsrap</li>
                             </br>
                             <li>Terminal</li>
                             <li>Git</li>
                             <li>Github</li>
-                            <li>Node JS (en étude)</li>
+                            <li>Node.js</li>
                             </ul>
                         </div>
 
@@ -179,7 +183,12 @@
                         Formations
                         </h2>
                         <p class="Formations--text_para"> 
-                            <strong class="Formations--text_para_important">2020-2021: Formation en Web Développement à BeCode.org.</strong>
+                            <strong class="Formations--text_para_importantone">
+                                <a href="https://becode.org/fr/" target="_blank">
+                                <img class="Formations--text_para_important_logo" src="Images/logoBeCode.png"/>
+                                </a>
+                                2020-2021: Formation en Web Développement à BeCode.org.
+                            </strong>
                             <br/>
                             Apprentissage des technologies de développement web ; 
                             </br>
@@ -187,10 +196,17 @@
                             </br>   
                             - Pédagogie active
                             </br>  
-                            - Technologies : Git, HTML, CSS, JavaScript, React, WordPress, MySQL et PHP.
+                            - Technologies : Git, HTML, CSS, JavaScript, Node.js, React, WordPress, MySQL et PHP.
                             <br/>
                             <br/>
-                            <strong>2007-2010 : Bachelier en arts plastiques visuels et de l'espace, Saint-Luc Liège.</strong>
+                            <strong class="Formations--text_para_importanttwo">
+                                <a href="https://www.saint-luc.be/" target="_blank">
+                                <img class="Formations--text_para_important_logo" src="Images/logoStLuc.png"/>
+                                </a>
+                                2007-2010 : Bachelier en arts plastiques visuels et de l'espace, 
+                                </br>
+                                Saint-Luc Liège.
+                            </strong>
                             <br/>
                             Enseignement graphique au service de la narration. Processus d’élaboration entre texte et image.
                             <br/>
@@ -202,60 +218,57 @@
                 </div>
 
                 <div id="Portfolio"> 
-                 <h2> 
-                    Travaux réalisés à BeCode 
-                    </br> 
-                    (En Construction)
-                </h2>
-                    <div class="Portfolio--text"> 
-                        <h3>
-                            HTML / css
-                        </h3>
-                        <ul class="Portfolio--textone_liste">
+                    <h2> 
+                        Travaux réalisés à BeCode 
+                        </br> 
+                        (En Construction)
+                    </h2>
+                    <!-------Autre façon de faire avec BEM--------->
+                    <article id="card">
+                        <div class="card__box"></div>
+                            <div class="card__box__color">
+                                <h4 class="card__box__text__title">Burger Project</h4>
+                                <p class="card__box__text__language"> 
+                                    HTML, SCSS, JavaScript.
+                                </p>
+                            </div>
+                                </br>
+                            <div class="card__box__text">
+                                <a class="card__box__text__link" href="https://github.com/MagaliGarot/Burger-Project">
+                                    <i class="fa fa-github" aria-hidden="true"></i> 
+                                    Lien vers Github
+                                </a>
+                                </br>
+                                <a class="card__box__text__link" href="https://magaligarot.github.io/Burger-Project/">
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                    Lien vers le Visuel
+                                </a>
+                                </br>
+                                <div class="card__box__text__titleS">
+                                    Projet Solo :
+                                </div>
+                                <p class="card__box__text__description">
+                                    <i>
+                                    Réalisation d'une page web d'après un wireframe existant.
+                                    Le but étant de reproduire au maximum le concept, 
+                                    tout en essayant de trouver les ressources externes sur le web (images, font, etc). 
+                                    </i>
+                                </p>
+                                </br>
+                            </div>
+                        </div>
+                    </article>
+
+                        <!-------CARD--------->
+                        <!-- <ul class="Portfolio--textone_liste">
                             <li><a class="Portfolio--text_liste_link" href="https://magaligarot.github.io/My-CV/" target="_blank">CV, projet libre</a></li>
                             <li><a class="Portfolio--text_liste_link" href="https://magaligarot.github.io/VCard-/" target="_blank">Carte de visite, projet libre</a></li>
                             <li><a class="Portfolio--text_liste_link" href="https://magaligarot.github.io/tim-berners-lee/" target="_blank">Reproduction d'une page en HTML et CSS d'après un wireframe</a></li>
                             <li><a class="Portfolio--text_liste_link" href="https://magaligarot.github.io/Museum-Project/events.html" target="_blank">Projet de groupe : reproduction de la page Event d'après un wireframe</a></li>
-                            <li><a class="Portfolio--text_liste_link" href="https://magaligarot.github.io/Museum-Project/event_details.html" target="_blank">Projet de groupe : reproduction de la page Event Details d'après un wireframe</a></li>
+                            <li><a class="Portfolio--text_liste_link" href="https://magaligarot.github.io/Museum-Project/event_details.html" target="_blank">Projet de groupe : reproduction de la page Event Details d'après un wireframe</a></li> -->
                         </ul>
-                    </div>
-
-                    <div class="Portfolio--text"> 
-                        <h3>
-                            JavaScript
-                        </h3>
-                        <ul class="Portfolio--text_liste">
-                            <li><a class="Portfolio--text_liste_link" target="_blank">A venir</a></li>
-                            <li><a class="Portfolio--text_liste_link" target="_blank"></a></li>
-                            <li><a class="Portfolio--text_liste_link" target="_blank"></a></li>
-                            <li><a class="Portfolio--text_liste_link" target="_blank"></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="Portfolio--text"> 
-                        <h3>
-                            React
-                        </h3>
-                        <ul class="Portfolio--text_liste">
-                            <li><a class="Portfolio--text_liste_link" target="_blank">A venir</a></li>
-                            <li><a class="Portfolio--textone_liste_link" target="_blank"></a></li>
-                            <li><a class="Portfolio--textone_liste_link" target="_blank"></a></li>
-                            <li><a class="Portfolio--textone_liste_link" target="_blank"></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="Portfolio--text"> 
-                        <h3>
-                            PHP
-                        </h3>
-                        <ul class="Portfolio--text_liste">
-                            <li><a class="Portfolio--text_liste_link" target="_blank">A venir</a></li>
-                            <li><a class="Portfolio--text_liste_link" target="_blank"></a></li>
-                            <li><a class="Portfolio--text_liste_link" target="_blank"></a></li>
-                            <li><a class="Portfolio--text_liste_link" target="_blank"></a></li>
-                        </ul>
-                    </div>
                 </div>
+
 
                 <div id="Graphisme"> 
                     <h2 class="Graphisme_titre"> 
