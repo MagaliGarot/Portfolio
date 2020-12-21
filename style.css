@@ -144,13 +144,14 @@ body {
  .icones_icones{
      font-size: 4em;
      color: white;
+     transition: all 1s ease-out;
  }
 
   /* ----ICONES --> HOVER -----*/
 
  .icones_icones:hover{
     /* font-size: 5em; */
-    color: #cc97a7;;
+    color: #cc97a7;
 }
 
 .objectifText{
@@ -199,6 +200,7 @@ body {
     font-family: 'Lekton', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
+    transition: all 1s ease-out;
 }
 
 .Menu_link:hover{
@@ -316,6 +318,7 @@ z-index: 2;
 
     }
     /*----HOVER icone competence----*/
+    /*Couleur qui changent*/
     .Competences--flex--dev_pictureone:hover{
         -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
         filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
@@ -414,31 +417,48 @@ z-index: 2;
 
 #Portfolio{
     width: 100%;
-    height: 1000px;
+    height: 100%;
     max-width: 1000px; 
-    /*MARGIN*/
+    max-height: 2000px;;
+ 
     margin-top: -400px;
     margin-left: auto; 
     margin-right: auto;
     padding: 50px 50px;
     background-color: white;
     border-radius: 30px;
+
 }
 
 /* ---- CARD PORTFOLIO-----*/
 
-#card{
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:'burgerbox buttonBox'
+                        'forumBox museumbox'
+                        ; 
+    grid-column-gap: 60px;
+    grid-row-gap: 160px;
+}
+
+.card{
     /*CONTAINER CARD*/
-    position: absolute;
     border: none;
     /*SIZE CARD*/
     width: 400px;
-    height: 680px;
+    height: 340px;
+    /* height: 680px; */
     background-color: white;
     /*SHODOW*/
     /*site : https://html-css-js.com/css/generator/box-shadow/*/
     -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
     box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
+    /*ANIM*/
+    transition: all 1s ease-out;
+     /*INVISIBLE*/
+    overflow: hidden;
 }
 
 .card__box__color{
@@ -446,14 +466,12 @@ z-index: 2;
     width: 400px;
     height: 200px;
     background-color:#ff8c4e;
-}
-
-#card:hover .card__box__color{
-    background-color:#ff8ef4;
+    transition: all 1s ease-out;
 }
     /*FIRST TITLE (name project)*/
 .card__box__text__title{
-    padding-top: 20px;
+    padding-top: 30px;
+    font-weight: 800;
     
 }
     /*SECOND TITLE (language)*/
@@ -473,6 +491,40 @@ z-index: 2;
     font-weight: 800;
 }
 
+.card__box__text__etc{
+    display: block;
+    text-align: right;
+    font-size: 1.6em;
+    font-weight: 800;
+    color: gray;
+
+    margin-top: -20px;
+/*ANIM DISPLAY NONE*/
+    transition: all 1s ease-out;
+}
+
+.card__box__text__titleS{
+    color: #ff8c4e;
+    font-size: 1.6em;
+    font-weight: 800;
+    margin: 20px 20px;
+}
+
+.card__box__text__description{
+    font-size: 1.3em;
+}
+
+    /*--HOVER CARD--*/
+
+.card:hover{
+    height: 630px;
+}
+   
+.card:hover .card__box__color{
+    background-color:#ff90be;
+    height: 180px;
+}
+   
 
 .card__box__text__link:hover{
     text-decoration: none;
@@ -480,11 +532,9 @@ z-index: 2;
     font-size: 2em;
 }
 
-.card__box__text__titleS{
-    color: #ff8c4e;;
-    font-size: 1.6em;
-    font-weight: 800;
-    margin: 20px 20px;
+.card:hover .card__box__text__etc{
+    /*Permet de faire disparaitre etc*/
+    display:none;
 }
 
 
