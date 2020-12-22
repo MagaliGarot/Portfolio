@@ -514,11 +514,23 @@ z-index: 2;
     font-size: 1.3em;
 }
 
-    /*--HOVER CARD--*/
+    /*--HOVER CARD--*/   
 
+    /*STOP CRAZY EFFECT*/
+    .museumbox .card:hover{
+        height: 630px;
+        margin-top: -180px;
+    }
+
+    .forumbox .card:hover{
+        height: 630px;
+        margin-top: -180px;
+    }
+
+/*GENERAL*/
 .card:hover{
     height: 630px;
-}
+} 
    
 .card:hover .card__box__color{
     background-color:#ff90be;
