@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     width: 100%;
     height: 100%;
@@ -396,21 +406,28 @@ z-index: 2;
     font-weight: 600;
 }
 
+.Formations--text_para a{
+    text-decoration: none;
+}
+
 .Formations--text_para_importantone{
     color: #ffb768;
-    text-decoration: none;
 }
 
 
 .Formations--text_para_importanttwo{
     color: #448fae;
-    text-decoration: none;
 }
 
     /* --Logo BeCode et Saint-Luc--*/
 .Formations--text_para_important_logo{
     height: 70px;
-    text-decoration: none;
+    opacity: 60%;
+}
+
+.Formations--text_para_important_logo:hover{
+    height: 75px;
+    opacity: 90%;
 }
 
  /* -------- PORTFOLIO ---------*/
@@ -436,11 +453,11 @@ z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:'burgerbox buttonBox'
-                        'forumBox museumbox'
+    grid-template-areas:'burgerbox buttonbox'
+                        'forumbox museumbox'
                         ; 
     grid-column-gap: 60px;
-    grid-row-gap: 160px;
+    grid-row-gap: 120px;
 }
 
 .card{
@@ -465,9 +482,23 @@ z-index: 2;
     /*RECTANGLE DE COULEUR*/
     width: 400px;
     height: 200px;
-    background-color:#ff8c4e;
+    background-color: #ffb768;
     transition: all 1s ease-out;
 }
+        /*CARD COLOR*/
+
+    .buttonbox .card__box__color{
+        background-color: #8fe1f5;
+    }
+
+    .forumbox .card__box__color{
+        background-color: #b0ef58;
+    }
+
+    .museumbox .card__box__color{
+        background-color: #ffa4f7;
+    }
+
     /*FIRST TITLE (name project)*/
 .card__box__text__title{
     padding-top: 30px;
@@ -529,7 +560,7 @@ z-index: 2;
 
 /*GENERAL*/
 .card:hover{
-    height: 630px;
+    height: 650px;
 } 
    
 .card:hover .card__box__color{
@@ -555,7 +586,7 @@ z-index: 2;
 #Graphisme{
     margin: auto; 
     max-width: 1000px;
-    height: 1100px; 
+    height: 1200px; 
     padding: 80px 30px;
 }
 
@@ -580,34 +611,109 @@ z-index: 2;
     margin-right: auto;
 }
 
+.noel{
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.BD{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.souris{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----VIDEOS-----*/
+.youtube{
+    margin-top: 100px;
+    padding: 20px 20px;
+    width: 100%; 
+    height: auto;
+
+    background-color: black;
+
+}
+
+.youtube__flex{
+    display: flex;
+    background-color: black;
+}
+
+.youtube__title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left:50px;
+    
+}
+
+.youtube__flex__clip{
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* ---- FOOTER-----*/
 
  /*----------CONTACT-------------*/
 
 #Contact{
-    margin: auto; 
     max-width: 100%; 
-    height: 500px;
-    padding: 80px 30px;
+    height: 400px;
     /*Image de fond */
     background-image: url("Images/bannière2.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 20%;
+    background-position-y: 23%;
+    margin-top: 100px;
 }
 
- /* ---- FOOTER-----*/
-  /* ----Rajouter les icones et infos contact---*/
-
-footer {
-    background-color: #D9CFE8;
-    padding: 25px 25px 25px 0px; 
+.Contact__container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:'Contact__container__titre'
+                        'Pied'
+                        'Contact__container__text'
+                        ; 
 }
 
-footer p {
-    font-size: 15px;
-    width: 300px;
-    margin-left: 25px;
+.Contact__container__titre{
+    height: 50px;
+    margin-left:50px;
+}
+
+.Contact__container__text{
+    height: 50px;
+    margin-left:50px;
+    font-size: 18px;
+}
+
+.Pied{
+    height: 50px;
+    margin-top: 50px;
+    text-align:center;
+     /* --FLEX COLUMN--*/
+    display: flex;
+}
+
+ .Pied_icones{
+     font-size: 4em;
+     color:#3bacc9;
+     transition: all 1s ease-out;
+     margin-left: 50px;
+ }
+
+  /* ----ICONES --> HOVER -----*/
+
+ .Pied_icones:hover{
+    /* font-size: 5em; */
+    color: #e994d5;
+    font-size: 4.3em;
 }
 
  /* ---- RESPONSIVE-----*/
@@ -746,9 +852,7 @@ footer p {
             border-radius: 30px;
         }
 
-
 }
-
 
 /*----------MEDIA QUERIES------------*/
 
@@ -823,7 +927,7 @@ footer p {
     .icones{
         display: flex;
         margin-top: 30px;;
-        margin-left: 30px;
+        margin-left: 50px;
         position: relative;
         z-index: 5;
     }
@@ -859,7 +963,8 @@ footer p {
         #Portfolio{
             width: 70%;
             /*MARGIN*/
-            margin-top: 0px;      /*----TEST---*/
+            margin-top: 0px;      
+       
             margin-left: auto; 
             margin-right: auto;
             padding: 50px 50px;
