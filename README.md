@@ -7,7 +7,7 @@ https://magaligarot.github.io/Portfolio/
 
 # Le projet :
 
-Réalisation d'un Portfolio en HTML, CSS et JavaScript pendant la formation BeCode de Liège. Il s'agit d'un projet personnel.
+Réalisation d'un Portfolio (projet personnel) en HTML, CSS et JavaScript en parallèle de la formation BeCode à Liège.
 
 ![<Visuel>](/Images/visuel.png)
 
@@ -23,11 +23,7 @@ Réalisation d'un Portfolio en HTML, CSS et JavaScript pendant la formation BeCo
 
 ## A venir
 
-* Portfolio
-* Galerie d'illustrations 
-* Articles et vidéos
-* Contact
-* Footer 
+* Responsive Tablette et Smartphone
 
 
 ## A propos :
@@ -35,6 +31,4 @@ Réalisation d'un Portfolio en HTML, CSS et JavaScript pendant la formation BeCo
 ### Magali :
 
 Actuellement en formation à BeCode Liège, je me forme avec comme objectif de décrocher un emploi dans le web développement. 
-
-![Profile picture](https://media-exp1.licdn.com/dms/image/C5603AQH6_wRw1oo1_Q/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=04SQggIj5A72JBIIWZay0bDyJC1Dqyd3djPWDxRS7SY)
 
