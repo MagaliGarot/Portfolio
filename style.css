@@ -739,6 +739,7 @@ z-index: 2;
         right: 0;
         bottom: 0;
         display: block;
+        background-image: url("../Portfolio/Images/bannieretablette.png");
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 0;
@@ -842,15 +843,34 @@ z-index: 2;
 
            /* ---- PORTFOLIO -----*/
            #Portfolio{
-            width: 70%;
+            width: auto;
             /*MARGIN*/
             margin-top: 0px;
             margin-left: auto; 
             margin-right: auto;
-            padding: 50px 50px;
+            padding: 20px 20px;
             background-color: white;
             border-radius: 30px;
         }
+
+          /*VIDEOS*/
+          .youtube__flex{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .youtube__title{
+            margin-top: 40px;
+        }
+        
+        .youtube__flex__clip{
+            margin-top: 25px;
+            margin-bottom: 70px;
+        
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 
 }
 
@@ -877,6 +897,7 @@ z-index: 2;
         right: 0;
         bottom: 0;
         display: block;
+        background-image: url("../Portfolio/Images/bannieregsm.png");
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 0;
@@ -961,15 +982,92 @@ z-index: 2;
 
          /* ---- PORTFOLIO -----*/
         #Portfolio{
-            width: 70%;
+            width: auto;
+            height: auto;
             /*MARGIN*/
             margin-top: 0px;      
        
             margin-left: auto; 
             margin-right: auto;
-            padding: 50px 50px;
+            padding: 5px 5px;
             background-color: white;
             border-radius: 30px;
         }
+
+        /* ---- CARD PORTFOLIO-----*/
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:'burgerbox buttonbox'
+                            'forumbox museumbox'
+                            ; 
+        grid-column-gap: 15px;
+        grid-row-gap: 140px;
+    }
+
+
+        .card{
+            /*CONTAINER CARD*/
+            border: none;
+            /*SIZE CARD*/
+            width: 300px;
+            height: 380px;
+            /* height: 680px; */
+            background-color: white;
+            /*SHODOW*/
+            /*site : https://html-css-js.com/css/generator/box-shadow/*/
+            -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
+            box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
+            /*ANIM*/
+            transition: all 1s ease-out;
+             /*INVISIBLE*/
+            overflow: hidden;
+        }
+
+        .card__box__color{
+            /*RECTANGLE DE COULEUR*/
+            width: 300px;
+            height: 200px;
+            background-color: #ffb768;
+            transition: all 1s ease-out;
+        }
+
+                /*GENERAL*/
+        .card:hover{
+            height: 900px;
+        } 
+        
+        .card:hover .card__box__color{
+            background-color:#ff90be;
+            height: 180px;
+        }
+        
+
+        .card__box__text__link:hover{
+            text-decoration: none;
+            color:#ff8c4e;
+            font-size: 2em;
+        }
+
+           /*VIDEOS*/
+           .youtube__flex{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .youtube__title{
+            margin-top: 40px;
+        }
+        
+        .youtube__flex__clip{
+            margin-top: 25px;
+            margin-bottom: 70px;
+        
+            margin-left: auto;
+            margin-right: auto;
+        }
+
 
 }
