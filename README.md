@@ -16,6 +16,9 @@ Réalisation d'un Portfolio (projet personnel) en HTML, CSS et JavaScript en par
 * CSS
 * JavaScript
 
+## Framework
+* Bootstrap 
+
 ## Structure du projet
 * index.html
 * style.css
