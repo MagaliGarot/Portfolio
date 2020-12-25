@@ -549,36 +549,36 @@ z-index: 2;
 
     /*STOP CRAZY EFFECT*/
     .museumbox .card:hover{
-        height: 630px;
+        height: 670px;
         margin-top: -180px;
     }
 
     .forumbox .card:hover{
-        height: 630px;
+        height: 670px;
         margin-top: -180px;
     }
 
-/*GENERAL*/
-.card:hover{
-    height: 650px;
-} 
-   
-.card:hover .card__box__color{
-    background-color:#ff90be;
-    height: 180px;
-}
-   
+    /*GENERAL - ALL CARD*/
+    .card:hover{
+        height: 650px;
+    } 
+    
+    .card:hover .card__box__color{
+        background-color:#ff90be;
+        height: 180px;
+    }
+    
 
-.card__box__text__link:hover{
-    text-decoration: none;
-    color:#ff8c4e;
-    font-size: 2em;
-}
+    .card__box__text__link:hover{
+        text-decoration: none;
+        color:#ff8c4e;
+        font-size: 2em;
+    }
 
-.card:hover .card__box__text__etc{
-    /*Permet de faire disparaitre etc*/
-    display:none;
-}
+    .card:hover .card__box__text__etc{
+        /*Permet de faire disparaitre etc*/
+        display:none;
+    }
 
 
  /*---------- Graphisme Carousel-------------*/
