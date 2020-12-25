@@ -1,5 +1,5 @@
-// HOVER PARALLAX --> permet d'avoir l'effet sur la section formation
-//Documentation : codepen
+// HOVER PARALLAX for FORMATIONS
+//Documentation : codepen : https://codepen.io/oscicen/pen/zyJeJw
 (function() {
     document.addEventListener("mousemove", parallax);
     const elem = document.querySelector("#Formations");
