@@ -533,7 +533,7 @@ z-index: 2;
     text-decoration: none;
     color: #cc97a7;
     font-size: 1.6em;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .card__box__text__etc{
@@ -601,8 +601,8 @@ z-index: 2;
 
     .card__box__text__link:hover{
         text-decoration: none;
-        color:#ff8c4e;
-        font-size: 2em;
+        color: #d47d97;
+        font-size: 1.7em;
     }
 
     .card:hover .card__box__text__etc{
