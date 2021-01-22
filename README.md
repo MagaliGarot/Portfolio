@@ -1,37 +1,37 @@
-# Portfolio
+# 💼 Portfolio
 My portfolio
 
-# Lien vers le projet : 
+# 🔗 Lien vers le projet : 
 Projet en construction :
 https://magaligarot.github.io/Portfolio/
 
-# Le projet :
+# 🗒Le projet :
 
 Réalisation d'un Portfolio (projet personnel) en HTML, CSS et JavaScript en parallèle de la formation BeCode à Liège.
 
 ![<Visuel>](/Images/visuel.png)
 
-## Langages 
+## 🔧 Langages
 * HTML
 * CSS
 * JavaScript
 
-## Framework
+## 📙 Framework
 * Bootstrap 
 
-## Structure du projet
+## 📁 Structure du projet
 * index.html
 * style.css
 * script.js
 
-## A venir
+## 📱Responsive
 
-* Responsive Tablette et Smartphone
+* Tablette et Smartphone
 
 
-## A propos :
+## 🖊 A propos :
 
-### Magali :
+### 👩‍💻 Magali :
 
 Actuellement en formation à BeCode Liège, je me forme avec comme objectif de décrocher un emploi dans le web développement. 
 
