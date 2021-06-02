@@ -509,8 +509,12 @@ z-index: 2;
         background-color: #7890c5;
     }
 
-    .reactProject .card__box__color{
+    .vueProject .card__box__color{
         background-color: #eb23c9;
+    }
+
+    .pomodoro .card__box__color{
+        background-color: #FFA4C0;
     }
 
     /*FIRST TITLE (name project)*/
