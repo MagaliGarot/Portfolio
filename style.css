@@ -1,13 +1,13 @@
 /*-----------ALL GENERAL-----------*/
 
-* {
+*{
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
 }
 
-body {
+body{
     margin: 0;
     padding: 0;
 }
@@ -31,20 +31,20 @@ a{
 
 /*-----------FONTS-----------*/
 
-h1 {
+h1{
     font-size: 4em;
     font-family: 'Lekton', sans-serif;
     padding: 10px 10px;
 }
 
-h2 {
+h2{
     font-size: 3em;
     color: lightblue;
     font-family: 'Lekton', sans-serif;
     padding-bottom: 40px;    
 }
 
-h3 {
+h3{
     font-size: 2em;
     color:#ffb768;
     font-family: 'Lekton', sans-serif;
@@ -52,7 +52,7 @@ h3 {
     text-align: center;
 }
 
-h4 {
+h4{
     font-size: 2em;
     color:white;
     font-family: 'Lekton', sans-serif;
@@ -60,7 +60,7 @@ h4 {
     text-align: center; 
 }
 
-p {
+p{
     font-family: Helvetica;
     color: gray;
     font-size: 1.5em;
@@ -73,7 +73,7 @@ li{
 }
 
 /*-----------BODY-----------*/
-body {
+body{
     width: 100%;
     height: 100%;
         /*Parallax profondeur */
@@ -84,7 +84,7 @@ body {
 
  /*-----------HEADER-----------*/
 
- header {
+ header{
     width: 100%;
     min-height: 130vh;
     position: relative;
@@ -112,7 +112,7 @@ body {
 
  /*-----------ACCUEIL-----------*/
 
- #Accueil {
+ #Accueil{
     position: absolute;
     z-index: 1;
     top: 200px;
@@ -295,98 +295,97 @@ z-index: 2;
     color: lightgray;
 }
 
-    /* -----COMPETENCES --> IMAGE------*/
+/* -----COMPETENCES --> IMAGE------*/
 
-    .Competences--flex--dev_pictureone{
-        width: 400px;
-        height: 400px;
-        background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/languagesweb.png");
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-size: 400px, 360px;
-        background-position: center, center;
-        margin-bottom: 40px;
-    }
+.Competences--flex--dev_pictureone{
+    width: 400px;
+    height: 400px;
+    background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/languagesweb.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 400px, 360px;
+    background-position: center, center;
+    margin-bottom: 40px;
+}
 
-    .Competences--flex--logiciel_picturetwo{
-        width: 400px;
-        height: 400px;
-        background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesordinateur.png");
-        background-repeat: no-repeat, no-repeat;
-        background-size: 400px, 250px;
-        background-position: center, center;
-        margin-bottom: 40px;
-    }
+.Competences--flex--logiciel_picturetwo{
+    width: 400px;
+    height: 400px;
+    background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesordinateur.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 250px;
+    background-position: center, center;
+    margin-bottom: 40px;
+}
 
-    .Competences--flex--SoftSkill_picturethree{
-        width: 400px;
-        height: 400px;
-        background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesprofil.png");
-        background-repeat: no-repeat, no-repeat;
-        background-size: 400px, 210px;
-        background-position: center, center;
-        margin-bottom: 40px;
+.Competences--flex--SoftSkill_picturethree{
+    width: 400px;
+    height: 400px;
+    background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesprofil.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 210px;
+    background-position: center, center;
+    margin-bottom: 40px;
 
-    }
-    /*----HOVER icone competence----*/
-    /*Couleur qui changent*/
-    .Competences--flex--dev_pictureone:hover{
-        -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-        filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-    }
+}
+/*----HOVER icone competence----*/
+/*Couleur qui changent*/
+.Competences--flex--dev_pictureone:hover{
+    -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+    filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+}
 
-    .Competences--flex--logiciel_picturetwo:hover{
-        -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-        filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-    }
+.Competences--flex--logiciel_picturetwo:hover{
+    -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+    filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+}
 
-    .Competences--flex--SoftSkill_picturethree:hover{
-        -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-        filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-    }
+.Competences--flex--SoftSkill_picturethree:hover{
+    -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+    filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+}
 
-    /* ---------COMPETENCES --> CONTAINER IMAGES ET LISTES--------*/
-
-    /*----FLEX GENERAL-----*/
+/* ---------COMPETENCES --> CONTAINER IMAGES ET LISTES--------*/
+/*----FLEX GENERAL-----*/
 .Competences--flextext{
     display: flex;
     justify-content: center;
 }
-   /*----FLEX COLUMN-----*/
+/*----FLEX COLUMN-----*/
 .Competences--flex--dev{
     margin: 20px 70px;
     display: flex;
     flex-direction: column;
 }
-   /*----FLEX COLUMN-----*/
+/*----FLEX COLUMN-----*/
 .Competences--flex--logiciel{
     margin: 20px 70px;
     display: flex;
     flex-direction: column;
 }
-   /*----FLEX COLUMN-----*/
+/*----FLEX COLUMN-----*/
 .Competences--flex--SoftSkill{
     margin: 20px 70px;
     display: flex;
     flex-direction: column;
 }
 
- /* ----COMPETENCE --> LISTES-----*/
- .Competences--flex--dev_listeone{
-   margin: 5% 30%;
-   font-weight: 600;
- }
+/* ----COMPETENCE --> LISTES-----*/
+.Competences--flex--dev_listeone{
+margin: 5% 30%;
+font-weight: 600;
+}
 
- .Competences--flex--logiciel_listetwo{
-    margin: 5% 30%;
-    font-weight: 600;
- }
+.Competences--flex--logiciel_listetwo{
+margin: 5% 30%;
+font-weight: 600;
+}
 
- .Competences--flex--SoftSkill_listethree{
-    margin: 5% 30%;
-    font-weight: 600;
- }
+.Competences--flex--SoftSkill_listethree{
+margin: 5% 30%;
+font-weight: 600;
+}
 
-  /* ----  FORMATION -----*/
+/* ----  FORMATION -----*/
 #Formations{
     width: 100%; 
     height: 1400px;
@@ -419,7 +418,7 @@ z-index: 2;
     color: #448fae;
 }
 
-    /* --Logo BeCode et Saint-Luc--*/
+/* --Logo BeCode et Saint-Luc--*/
 .Formations--text_para_important_logo{
     height: 70px;
     opacity: 60%;
@@ -470,25 +469,23 @@ z-index: 2;
     height: 340px;
     /* height: 680px; */
     background-color: white;
-    /*SHODOW*/
-    /*site : https://html-css-js.com/css/generator/box-shadow/*/
+    /*SHADOW -> https://html-css-js.com/css/generator/box-shadow/*/
     -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
     box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
     /*ANIM*/
     transition: all 1s ease-out;
-     /*INVISIBLE*/
+    /*INVISIBLE*/
     overflow: hidden;
 }
 
 .card__box__color{
-    /*RECTANGLE DE COULEUR*/
+    /*CARD FOND RECTANGLE DE COULEUR*/
     width: 400px;
     height: 200px;
     background-color: #ffb768;
     transition: all 1s ease-out;
 }
-        /*CARD COLOR*/
-
+    /*CARD COLOR*/
     .buttonbox .card__box__color{
         background-color: #8fe1f5;
     }
@@ -517,7 +514,7 @@ z-index: 2;
         background-color: #FFA4C0;
     }
 
-    /*FIRST TITLE (name project)*/
+/*FIRST TITLE (name project)*/
 .card__box__text__title{
     padding-top: 30px;
     font-weight: 800;
@@ -563,7 +560,7 @@ z-index: 2;
     font-size: 1.3em;
 }
 
-    /*--HOVER CARD--*/   
+/*--HOVER CARD--*/   
 
     /*STOP CRAZY EFFECT*/
 
@@ -753,17 +750,15 @@ z-index: 2;
  }
 
   /* ----ICONES --> HOVER -----*/
-
  .Pied_icones:hover{
     /* font-size: 5em; */
     color: #e994d5;
     font-size: 4.3em;
 }
 
- /* ---- RESPONSIVE-----*//*-----MEDIA QUERIES-----*/
+/*-----MEDIA QUERIES-----*/
 
 /*---------TABLETTE---------*/
-
 @media screen and (max-width: 1315px) {
     /*HEADER*/
     header {
@@ -918,8 +913,6 @@ z-index: 2;
 
 }
 
-/*----------MEDIA QUERIES------------*/
-
 /*---------SMARTPHONE---------*/
 @media screen and (max-width: 800px) {
     
@@ -1008,38 +1001,37 @@ z-index: 2;
         color: plum;
      }
 
-        /*COMPETENCE*/
-        .Competences--flextext{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-right: auto;
-            margin-left: auto;
-        }
+    /*COMPETENCE*/
+    .Competences--flextext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-          /* ----  FORMATION -----*/
-        #Formations{
-            height: 80%;
-            margin-left: auto; 
-            margin-right: auto;
-        }
+    /* ----  FORMATION -----*/
+    #Formations{
+        height: 80%;
+        margin-left: auto; 
+        margin-right: auto;
+    }
 
-         /* ---- PORTFOLIO -----*/
-        #Portfolio{
-            width: auto;
-            height: auto;
-            /*MARGIN*/
-            margin-top: 0px;      
-       
-            margin-left: auto; 
-            margin-right: auto;
-            padding: 10px 10px;
-            background-color: white;
-            border-radius: 30px;
-        }
+    /* ---- PORTFOLIO -----*/
+    #Portfolio{
+        width: auto;
+        height: auto;
+        /*MARGIN*/
+        margin-top: 0px;      
+    
+        margin-left: auto; 
+        margin-right: auto;
+        padding: 10px 10px;
+        background-color: white;
+        border-radius: 30px;
+    }
 
-        /* ---- CARD PORTFOLIO-----*/
-
+    /* ---- CARD PORTFOLIO-----*/
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1052,41 +1044,40 @@ z-index: 2;
     }
 
 
-        .card{
-            /*CONTAINER CARD*/
-            border: none;
-            /*SIZE CARD*/
-            width: 300px;
-            height: 380px;
-            /* height: 680px; */
-            background-color: white;
-            /*SHODOW*/
-            /*site : https://html-css-js.com/css/generator/box-shadow/*/
-            -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
-            box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
-            /*ANIM*/
-            transition: all 1s ease-out;
-             /*INVISIBLE*/
-            overflow: hidden;
-        }
+    .card{
+        /*CONTAINER CARD*/
+        border: none;
+        /*SIZE CARD*/
+        width: 300px;
+        height: 380px;
+        /* height: 680px; */
+        background-color: white;
+        /*SHODOW*/
+        /*site : https://html-css-js.com/css/generator/box-shadow/*/
+        -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
+        box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
+        /*ANIM*/
+        transition: all 1s ease-out;
+            /*INVISIBLE*/
+        overflow: hidden;
+    }
 
-           /*VIDEOS*/
-           .youtube__flex{
-            display: flex;
-            flex-direction: column;
-        }
+        /*VIDEOS*/
+        .youtube__flex{
+        display: flex;
+        flex-direction: column;
+    }
 
-        .youtube__title{
-            margin-top: 40px;
-        }
-        
-        .youtube__flex__clip{
-            margin-top: 25px;
-            margin-bottom: 70px;
-        
-            margin-left: auto;
-            margin-right: auto;
-        }
-
+    .youtube__title{
+        margin-top: 40px;
+    }
+    
+    .youtube__flex__clip{
+        margin-top: 25px;
+        margin-bottom: 70px;
+    
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
