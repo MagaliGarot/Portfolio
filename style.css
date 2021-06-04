@@ -757,7 +757,125 @@ font-weight: 600;
 
 /*-----MEDIA QUERIES-----*/
 
-/*---------TABLETTE Vertical---------*/
+/*----------FORMAT TABLETTE PAYSAGE OU PETIT ECRAN--------------*/
+
+@media screen and (max-width: 1200px) {
+    .objectifText{
+        padding: 30px 30px;
+        margin-left: 30px;
+        width: 50vw;
+        position: relative;
+        z-index: 4;
+        top: -900px;
+        justify-content: right;
+        /*TEXT*/
+        color: white;
+        font-family: Helvetica;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+     /* -----COMPETENCES --> IMAGE------*/
+
+     .Competences--flex--dev_pictureone{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 180px;
+    }
+
+    .Competences--flex--logiciel_picturetwo{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 130px;
+    }
+
+    .Competences--flex--SoftSkill_picturethree{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 110px;
+    }
+
+     /*VIDEOS*/
+
+    .youtube__flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtube__title{
+        margin-top: 40px;
+    }
+
+    .youtube__flex__clip{
+        margin-top: 25px;
+        margin-bottom: 70px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+  
+}
+
+@media screen and (max-width: 1600px) {
+    .objectifText{
+        padding: 30px 30px;
+        margin-left: 30px;
+        width: 50vw;
+        position: relative;
+        z-index: 4;
+        top: 40px;
+        justify-content: right;
+        /*TEXT*/
+        color: white;
+        font-family: Helvetica;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+     /* -----COMPETENCES --> IMAGE------*/
+
+     .Competences--flex--dev_pictureone{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 180px;
+    }
+
+    .Competences--flex--logiciel_picturetwo{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 130px;
+    }
+
+    .Competences--flex--SoftSkill_picturethree{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 110px;
+    }
+
+     /*VIDEOS*/
+
+    .youtube__flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtube__title{
+        margin-top: 40px;
+    }
+
+    .youtube__flex__clip{
+        margin-top: 25px;
+        margin-bottom: 70px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+  
+}
+
+/*--------SMARTPHONE--------*/
 @media screen and (max-width: 1315px) {
     /*HEADER*/
     header {
@@ -816,7 +934,7 @@ font-weight: 600;
         width: 70vw;
         position: relative;
         z-index: 4;
-        top: -40px;
+        top: 300px;
         justify-content: right;
         /*TEXT*/
         color: white;
@@ -911,7 +1029,7 @@ font-weight: 600;
 
 }
 
-/*---------SMARTPHONE---------*/
+/*---------ZOOM 300---------*/
 @media screen and (max-width: 800px) {
     
     /*HEADER*/
