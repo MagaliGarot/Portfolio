@@ -134,7 +134,6 @@ body{
     font-size: 3rem;
     color: lightblue;
  }
-
  
 /*-----------ACCUEIL ICONES GITHUB - EMAIL-----------*/
 
@@ -157,16 +156,16 @@ body{
      transition: all 1s ease-out;
  }
 
-  /* ----ICONES --> HOVER -----*/
+/* ----ICONES --> HOVER -----*/
 
  .icones_icones:hover{
-    /* font-size: 5em; */
+    font-size: 4.2em;
     color: #cc97a7;
 }
 
 .objectifText{
     width: 33vw;
-    margin-top: 640px;
+    margin-top: 600px;
     float: right;
     position: relative;
     z-index: 4;
@@ -174,7 +173,7 @@ body{
     /*TEXT*/
     color: white;
     font-family: Helvetica;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 500;
     /*BORDER*/
     border: 1px;
@@ -325,10 +324,10 @@ z-index: 2;
     background-size: 400px, 210px;
     background-position: center, center;
     margin-bottom: 40px;
-
 }
+
 /*----HOVER icone competence----*/
-/*Couleur qui changent*/
+/*Couleurs qui changent*/
 .Competences--flex--dev_pictureone:hover{
     -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
     filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
@@ -452,12 +451,12 @@ font-weight: 600;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:'burgerbox buttonbox'
+    /* grid-template-areas:'burgerbox buttonbox'
                         'pageAnimate wordPressSite'
-                        'reactProject forumbox'
-                        'museumbox'
-                        ; 
-    grid-column-gap: 60px;
+                        'vueProject pomodoro'
+                        'forumbox museumbox'
+                        ;  */
+    grid-column-gap: 80px;
     grid-row-gap: 120px;
 }
 
@@ -698,9 +697,9 @@ font-weight: 600;
     margin-right: auto;
 }
 
- /* ---- FOOTER-----*/
+/* ---- FOOTER-----*/
 
- /*----------CONTACT-------------*/
+/*----------CONTACT-------------*/
 
 #Contact{
     max-width: 100%; 
@@ -758,7 +757,7 @@ font-weight: 600;
 
 /*-----MEDIA QUERIES-----*/
 
-/*---------TABLETTE---------*/
+/*---------TABLETTE Vertical---------*/
 @media screen and (max-width: 1315px) {
     /*HEADER*/
     header {
@@ -817,7 +816,7 @@ font-weight: 600;
         width: 70vw;
         position: relative;
         z-index: 4;
-        top: 500px;
+        top: -40px;
         justify-content: right;
         /*TEXT*/
         color: white;
@@ -841,7 +840,7 @@ font-weight: 600;
      }
     
      .icones_icones:hover{
-        font-size: 4em;
+        font-size: 3.2em;
         color: plum;
      }
         
@@ -910,7 +909,6 @@ font-weight: 600;
             margin-right: auto;
         }
 
-
 }
 
 /*---------SMARTPHONE---------*/
@@ -922,7 +920,7 @@ font-weight: 600;
         flex-direction: column;
         min-height: 130vh;
         position: relative;
-          /*Parallax*/
+        /*Parallax*/
         transform-style: preserve-3d;
      }
      
@@ -956,16 +954,24 @@ font-weight: 600;
      }
     
      .Accueil--name{
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 700;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
         color: white;
      }
     
      .Accueil--webDev{
+        padding-top: 15px;
         font-size: 3rem;
         color: lightblue;
      }
+
+      /*----------- MENU -----------*/
+
+     #Menu{
+      display: none;
+    }
 
      .objectifText{
         padding: 30px 30px;
@@ -973,7 +979,7 @@ font-weight: 600;
         width: 70vw;
         position: relative;
         z-index: 4;
-        top: 500px;
+        top: -80px;
         justify-content: right;
         /*TEXT*/
         color: white;
@@ -992,14 +998,33 @@ font-weight: 600;
     
          
      .icones_icones{
-         font-size: 3em;
+         font-size: 2.3em;
          color: white;
      }
     
      .icones_icones:hover{
-        font-size: 4em;
+        font-size: 2.3em;
         color: plum;
      }
+
+     /*-----------A PROPOS-----------*/
+
+    #Apropos{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .Apropos--image_text{
+    font-size: 1.3em;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    }
+
+    .Apropos_textone{
+    border: 0px;
+    border-style: none none none none;
+    padding-left: 0px;
+    }
 
     /*COMPETENCE*/
     .Competences--flextext{
@@ -1010,11 +1035,89 @@ font-weight: 600;
         margin-left: auto;
     }
 
+    /* -----COMPETENCES --> IMAGE------*/
+
+    .Competences--flex--dev_pictureone{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 180px;
+    }
+
+    .Competences--flex--logiciel_picturetwo{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 130px;
+    }
+
+    .Competences--flex--SoftSkill_picturethree{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 110px;
+    }
+
     /* ----  FORMATION -----*/
     #Formations{
         height: 80%;
         margin-left: auto; 
         margin-right: auto;
+    }
+
+    .Formations--text_para{
+        font-size: 1.3em;
+    }
+    
+    .Formations--text_para_importanttwo{
+        color: #448fae;
+    }
+
+    /* ---- TRAVAUX -----*/
+
+    .card__box__color{
+        /*CARD FOND RECTANGLE DE COULEUR*/
+        width: 300px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 200px;
+    }
+
+    .vueProject{
+        grid-column: 1; grid-row: 1;
+    }
+
+    .pageAnimate{
+        grid-column: 1; grid-row: 2;
+    }
+
+    .buttonbox{
+        grid-column: 1; grid-row: 3;
+    }
+
+    .pomodoro{
+        grid-column: 1; grid-row: 4;
+    }
+
+    .burgerbox{
+        grid-column: 1; grid-row: 5;
+    }
+
+    .forumbox{
+        grid-column: 1; grid-row: 6;
+    }
+
+    .museumbox{
+        grid-column: 1; grid-row: 7;
+    }
+
+    .wordPressSite{
+        grid-column: 1; grid-row: 8;
     }
 
     /* ---- PORTFOLIO -----*/
@@ -1023,26 +1126,16 @@ font-weight: 600;
         height: auto;
         /*MARGIN*/
         margin-top: 0px;      
-    
-        margin-left: auto; 
-        margin-right: auto;
-        padding: 10px 10px;
-        background-color: white;
-        border-radius: 30px;
+        margin-left: 15%; 
+        margin-right: 15%;
+        max-height: 5000px;
+    }
+
+    #Graphisme{
+        height: auto;
     }
 
     /* ---- CARD PORTFOLIO-----*/
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:'burgerbox buttonbox'
-                            'forumbox museumbox'
-                            ; 
-        grid-column-gap: 15px;
-        grid-row-gap: 140px;
-    }
-
 
     .card{
         /*CONTAINER CARD*/
@@ -1062,10 +1155,13 @@ font-weight: 600;
         overflow: hidden;
     }
 
-        /*VIDEOS*/
-        .youtube__flex{
+    /*VIDEOS*/
+
+    .youtube__flex{
         display: flex;
         flex-direction: column;
+        width: 30%;
+        margin: 4rem;
     }
 
     .youtube__title{
