@@ -757,9 +757,12 @@ font-weight: 600;
 
 /*-----MEDIA QUERIES-----*/
 
-/*----------FORMAT TABLETTE PAYSAGE OU PETIT ECRAN--------------*/
+/*----------FORMAT TABLETTE Vertical--------------*/
 
 @media screen and (max-width: 1200px) {
+
+    /*-----HEADER------*/
+
     .objectifText{
         padding: 30px 30px;
         margin-left: 30px;
@@ -817,7 +820,9 @@ font-weight: 600;
   
 }
 
+
 @media screen and (max-width: 1600px) {
+
     .objectifText{
         padding: 30px 30px;
         margin-left: 30px;
@@ -934,7 +939,7 @@ font-weight: 600;
         width: 70vw;
         position: relative;
         z-index: 4;
-        top: 300px;
+        top: 410px;
         justify-content: right;
         /*TEXT*/
         color: white;
