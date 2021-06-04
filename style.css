@@ -881,7 +881,7 @@ font-weight: 600;
 }
 
 /*--------SMARTPHONE--------*/
-@media screen and (max-width: 1315px) {
+@media screen and (max-width: 1300px) {
     /*HEADER*/
     header {
         display: flex;
@@ -1366,25 +1366,6 @@ font-weight: 600;
         color: plum;
      }
 
-     /*-----------A PROPOS-----------*/
-
-    #Apropos{
-    display: flex;
-    flex-direction: column;
-    }
-
-    .Apropos--image_text{
-    font-size: 1.3em;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    }
-
-    .Apropos_textone{
-    border: 0px;
-    border-style: none none none none;
-    padding-left: 0px;
-    }
-
     /*COMPETENCE*/
     .Competences--flextext{
         display: flex;
@@ -1392,26 +1373,6 @@ font-weight: 600;
         justify-content: center;
         margin-right: auto;
         margin-left: auto;
-    }
-
-    /* -----COMPETENCES --> IMAGE------*/
-
-    .Competences--flex--dev_pictureone{
-        width: 210px;
-        height: 210px;
-        background-size: 210px, 180px;
-    }
-
-    .Competences--flex--logiciel_picturetwo{
-        width: 210px;
-        height: 210px;
-        background-size: 210px, 130px;
-    }
-
-    .Competences--flex--SoftSkill_picturethree{
-        width: 210px;
-        height: 210px;
-        background-size: 210px, 110px;
     }
 
     /* ----  FORMATION -----*/
@@ -1449,8 +1410,8 @@ font-weight: 600;
         height: auto;
         /*MARGIN*/
         margin-top: 30px;      
-        margin-left: 20%; 
-        margin-right: 20%; 
+        margin-left: 10%; 
+        margin-right: 10%; 
     } 
 
     #Graphisme{
