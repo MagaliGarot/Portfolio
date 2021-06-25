@@ -18,3 +18,19 @@
     }
 
 })();
+
+(function() {
+    const button = document.getElementById("accessibilityTrue");
+    button.addEventListener("click", function() {
+        document.getElementById("cardWorkOne").style.cssText = "height: 720px; margin-top: 0px"; 
+        document.getElementById("cardWorkTwo").style.cssText = "height: 720px; margin-top: 0px";  
+        document.getElementById("cardWorkThree").style.cssText = "height: 720px; margin-top: 0px"; 
+        document.getElementById("cardWorkFour").style.cssText = "height: 720px; margin-top: 0px"; 
+        document.getElementById("cardWorkFive").style.cssText = "height: 720px; margin-top: 0px"; 
+        document.getElementById("cardWorkSix").style.cssText = "height: 720px; margin-top: 0px"; 
+        document.getElementById("cardWorkSeven").style.cssText = "height: 720px; margin-top: 0px"; 
+        document.getElementById("cardWorkHeight").style.cssText = "height: 720px; margin-top: 0px";
+        // document.getElementById("accessibilityTrue").style.display = "none";
+        // document.getElementById("accessibilityFalse").style.display = "block";
+    });
+})();
