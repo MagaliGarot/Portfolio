@@ -468,19 +468,21 @@ section{
 /* ---- CARD PORTFOLIO-----*/
 
 .accessibility{
-    padding: 0px 15px; 
+    padding: 15px 15px; 
     border-radius: 10px;
     margin-bottom: 80px;
     background: transparent;
     border: none;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color:#ef8e4b; 
     transition: all 0.5s ease-out;
 }
 
-.accessibility p{
-    font-size: 0.3em;
+.accessibility-text{
+    color:#ef8e4b;
+    font-size: 0.6em;
+    padding: 0px 15px; 
 }
 
 #accessibilityFalse{
