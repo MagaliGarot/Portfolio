@@ -1,0 +1,1335 @@
+/*-----------ALL GENERAL-----------*/
+
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+
+  /*Parallax --> element racine*/
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*-----------FONTS-----------*/
+
+h1{
+  font-size: 4em;
+  font-family: 'Lekton', sans-serif;
+  padding: 10px 10px;
+}
+
+h2{
+  font-size: 3em;
+  color: lightblue;
+  font-family: 'Lekton', sans-serif;
+  padding-bottom: 40px;    
+}
+
+h3{
+  font-size: 2em;
+  color:#ffb768;
+  font-family: 'Lekton', sans-serif;
+  padding-bottom: 40px;    
+  text-align: center;
+}
+
+h4{
+  font-size: 2em;
+  color:white;
+  font-family: 'Lekton', sans-serif;
+  padding-bottom: 40px;   
+  text-align: center; 
+}
+
+p{
+  font-family: Helvetica;
+  color: gray;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+li{
+  font-family: Helvetica;
+  font-size: 1.2em;
+}
+
+
+/*-----------@Mixin-----------*/
+
+ @mixin webkitFilterOne{
+  -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(278deg);
+  filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(278deg);
+ }
+
+ @mixin webkitFilterTwo{
+  -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+  filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+}
+
+@mixin webkitShadow{
+  -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
+      box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
+}
+
+/*-----------BODY-----------*/
+
+body{
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+      /*Parallax profondeur */
+  perspective: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  /*-----------HEADER-----------*/
+
+  header{
+    width: 100%;
+    min-height: 130vh;
+    position: relative;
+    /*Parallax*/
+    transform-style: preserve-3d;
+
+    header::before { 
+      /*Parallax*/
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background-image: url("../Portfolio/Images/banniere.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+      /*Parallax*/
+      transform: translateZ(-4px);
+      transform: translateZ(-4px) scale(2.1); /*corrige taille image*/
+    }
+    
+    /*-----------ACCUEIL-----------*/
+    
+    #Accueil{
+      position: absolute;
+      z-index: 1;
+      top: 200px;
+      padding: 0 30px;
+    
+      /*Parallax*/
+      transform: translateZ(-2px);
+      transform: translateZ(-2px) scale(1.8); /*corrige taille texte*/
+    }
+    
+    .Accueil--name{
+      font-size: 5rem;
+      font-weight: 700;
+      padding-bottom: 20px;
+      color: white;
+    }
+    
+    .Accueil--webDev{
+      font-size: 3rem;
+      color: lightblue;
+    }
+    
+    /*-----------ACCUEIL ICONES GITHUB - EMAIL-----------*/
+    
+    .icones{
+      height: 50px;
+      margin-top: 3%;;
+      margin-right: 3%;
+      /* --FLEX COLUMN--*/
+      display: flex;
+      float: right;
+      flex-direction: column;
+      position: relative;
+      z-index: 5;
+      justify-content: right;
+
+      .icones_icones{
+        font-size: 4em;
+        color: white;
+        transition: all 1s ease-out;
+  
+        &:hover{
+          color: #cc97a7;
+        }
+        &:focus{
+          color: #050002;
+          outline: none;
+        }
+      }
+    }
+    
+    .objectifText{
+      width: 33vw;
+      margin-top: 30rem;
+      float: right;
+      position: relative;
+      z-index: 4;
+      justify-content: right;
+      
+      color: white;
+      font-family: Helvetica;
+      font-size: 1.3em;
+      font-weight: 500;
+  
+      border: 1px;
+      border-style: none none none solid;
+      border-color: white;
+    
+      padding: 3px 30px;
+    }
+  }
+
+/*-----------MENU-----------*/
+
+#Menu{
+  /*CONTAINER FLEX*/
+  position: relative;
+  z-index: 3;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+
+  .Menu_link{
+    height: 60px;
+    width: 250px;
+    background-color: black;
+    text-align: center;
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    font-family: 'Lekton', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    transition: all 1s ease-out;
+  }
+
+  &:hover{
+    color:#cc97a7;
+    font-weight: 800;
+    font-size: 1.6em;
+    text-decoration: none;
+  }
+
+  &:focus{
+    color:#cc97a7;                
+    font-weight: 800;
+    font-size: 1.6em;
+    text-decoration: none;
+    outline: 2px solid white;
+    outline-offset: -6px;
+  }
+}
+
+/*-----------MAIN-----------*/
+section{
+  width: 100%;
+  background: white;
+  /*Prallax*/
+  position: relative;
+  z-index: 2;
+
+  /*-- ESPACE ENTRE LE HEADER ET LA SUITE --*/
+  .espacewhite{
+    background-color: white;
+    height: 8vw;
+  }
+
+  /*-----------A PROPOS-----------*/
+  #Apropos{
+    display: flex;
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1000px; 
+    padding: 10px 50px;
+
+    .Apropos--image_text{
+      color: gray;
+      font-size: 1.3em;
+      margin-top: 1.7vw;
+    }
+  
+    .Apropos--image_link{
+      height: 370px;
+      margin-right: 50px;
+
+      &:hover{
+        @include webkitFilterOne;
+      }
+    }
+
+    .NoDesktop{
+      display: none;
+    }
+  
+    .Apropos_textone{
+      border: 1px;
+      border-style: none none none solid;
+      padding-left: 60px;
+      border-color: lightgray;
+    }
+  
+    .Apropos_textone_bottom{
+      color:#ffb768;
+      font-weight: 600;
+    }
+  
+    /*color small icone*/
+    .Apropos--image_text_icone{
+      color:#ffb768;
+      #iconeorange{
+        color: #ffb768;
+        font-weight: 400;
+      }
+    }
+  }
+
+  /*--------COMPETENCES --> container principale---------*/
+  #Competences{
+    max-width: 100%; 
+    margin-top: 150px;
+    padding: 100px 50px 50px 100px;
+    background-color: black;
+    color: lightgray;
+
+    /* -----COMPETENCES --> IMAGE------*/
+
+  .Competences--flex--dev_pictureone{
+    width: 400px;
+    height: 400px;
+    background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/languagesweb.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 400px, 360px;
+    background-position: center, center;
+    margin-bottom: 40px;
+
+    &:hover{
+      @include webkitFilterTwo;
+    }
+  }
+
+  .Competences--flex--logiciel_picturetwo{
+    width: 400px;
+    height: 400px;
+    background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesordinateur.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 250px;
+    background-position: center, center;
+    margin-bottom: 40px;
+
+    &:hover{
+      @include webkitFilterTwo;
+    }
+  }
+
+  .Competences--flex--SoftSkill_picturethree{
+    width: 400px;
+    height: 400px;
+    background-image: url("../Portfolio/Images/iconescontour.png"), url("../Portfolio/Images/iconesprofil.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 210px;
+    background-position: center, center;
+    margin-bottom: 40px;
+
+    &:hover{
+      @include webkitFilterTwo;
+    }
+  }
+
+  /* ---------COMPETENCES--------*/
+  /*----FLEX-----*/
+  .Competences--flextext{
+    display: flex;
+    justify-content: center;
+  }
+  /*----FLEX COLUMN-----*/
+  .Competences--flex--dev{
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  /*----FLEX COLUMN-----*/
+  .Competences--flex--logiciel{
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  /*----FLEX COLUMN-----*/
+  .Competences--flex--SoftSkill{
+    margin: 20px 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ----COMPETENCE --> LISTES-----*/
+  .Competences--flex--dev_listeone{
+    margin: 5% 30%;
+    font-weight: 600;
+  }
+
+  .Competences--flex--logiciel_listetwo{
+    margin: 5% 30%;
+    font-weight: 600;
+  }
+
+  .Competences--flex--SoftSkill_listethree{
+    margin: 5% 30%;
+    font-weight: 600;
+  }
+  }
+
+  /* ----  FORMATION -----*/
+  #Formations{
+    width: 100%; 
+    height: 1400px;
+    background-image: url("../Portfolio/Images/effetthree.png"), url("../Portfolio/Images/effettwo.png"), url("../Portfolio/Images/effetone.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100%, 100%, 100%;
+    background-position-y: 60%, 60%, 60%;
+
+    .Formations--text{
+      margin: auto; 
+      max-width: 1000px; 
+      padding: 200px 30px; 
+    }
+  
+    .Formations--text_para{
+      font-weight: 600;
+      a{
+        text-decoration: none;
+      }
+      .Formations--text_para_importantone{
+        color: #ffb768;
+      }
+    
+    
+      .Formations--text_para_importanttwo{
+        color: #448fae;
+      }
+    
+      /* --Logo BeCode et Saint-Luc--*/
+      .Formations--text_para_important_logo{
+        height: 70px;
+        opacity: 70%;
+
+        &:hover{
+          opacity: 90%;
+        }
+      }
+  
+      .linkSchool:focus img{
+        outline:none;
+        opacity: 100%;
+      }
+    }
+  }
+
+  /* -------- PORTFOLIO ---------*/
+
+  #Portfolio{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px; 
+    max-height: 4000px;
+    margin-top: -400px;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 50px 50px;
+    background-color: white;
+    border-radius: 30px;
+
+    /* ---- CARD PORTFOLIO-----*/
+
+    .accessibility{
+      padding: 15px 15px; 
+      border-radius: 10px;
+      margin-bottom: 80px;
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      text-align: center;
+      color:#ef8e4b; 
+      transition: all 0.5s ease-out;
+
+      &:hover{
+        background:#ef8bd4;
+        color: white;
+      }
+      &:focus{
+        background:#ef8bd4;
+        color: white;
+      }
+    }
+
+    .accessibility-text{
+      color:#ef8e4b;
+      font-size: 0.6em;
+      padding: 0px 15px; 
+    }
+
+    #accessibilityFalse{
+      display:none;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      /* grid-template-areas:'burgerbox buttonbox'
+                          'pageAnimate wordPressSite'
+                          'vueProject pomodoro'
+                          'forumbox museumbox'
+                          ;  */
+      grid-column-gap: 80px;
+      grid-row-gap: 120px;
+
+        card{
+          /*CONTAINER CARD*/
+          border: none;
+          /*SIZE CARD*/
+          width: 400px;
+          height: 340px;
+          
+          background-color: white;
+          @include webkitShadow;
+          transition: all 1s ease-out;
+          overflow: hidden;
+        }
+    
+        .card__box__color{
+          /*CARD FOND RECTANGLE DE COULEUR*/
+          width: 400px;
+          height: 200px;
+          background-color: #ffb768;
+          transition: all 1s ease-out;
+        }
+        
+        /*CARD COLOR*/
+        .buttonbox .card__box__color{
+          background-color: #8fe1f5;
+        }
+    
+        .forumbox .card__box__color{
+          background-color: #b0ef58;
+        }
+    
+        .museumbox .card__box__color{
+          background-color: #ffa4f7;
+        }
+    
+        .pageAnimate .card__box__color{
+          background-color: #df595e;
+        }
+    
+        .wordPressSite .card__box__color{
+          background-color: #7890c5;
+        }
+    
+        .vueProject .card__box__color{
+          background-color: #eb23c9;
+        }
+    
+        .pomodoro .card__box__color{
+          background-color: #FFA4C0;
+        }
+    
+        /*FIRST TITLE (name project)*/
+        .card__box__text__title{
+          padding-top: 30px;
+          font-weight: 800;
+          
+        }
+    
+        /*SECOND TITLE (language)*/
+        .card__box__text__language{
+          text-align: center;
+          font-weight: 800;
+        }
+    
+        .card__box__text{
+          margin: 20px 20px;
+        }
+    
+        .card__box__text__link{
+          text-decoration: none;
+          color: #cc97a7;
+          font-size: 1.6em;
+          font-weight: 600;
+        }
+    
+        .card__box__text__etc{
+          display: block;
+          text-align: right;
+          font-size: 1.6em;
+          font-weight: 800;
+          color: gray;
+    
+          margin-top: -20px;
+        /*ANIM DISPLAY NONE*/
+          transition: all 1s ease-out;
+        }
+    
+        .card__box__text__titleS{
+          color: #ff8c4e;
+          font-size: 1.6em;
+          font-weight: 800;
+          margin: 20px 20px;
+        }
+    
+        .card__box__text__description{
+          font-size: 1.3em;
+        }
+    
+        /*--HOVER CARD--*/   
+        /*STOP CRAZY EFFECT*/
+    
+        .pageAnimate .card:hover{
+          height: 670px;
+          margin-top: -180px;
+        }
+    
+        .wordPressSite .card:hover{
+          height: 670px;
+          margin-top: -180px;
+        }
+    
+        .forumbox .card:hover{
+          height: 670px;
+          margin-top: -40px;
+        }
+    
+        .reactProject .card:hover{
+          height: 670px;
+          margin-top: -40px;
+        }
+    
+        .museumbox .card:hover{
+          height: 670px;
+          margin-top: -40px;
+        }
+    
+        /*GENERAL - ALL CARD*/
+        .card:hover{
+          height: 650px;
+        } 
+    
+        .card:focus{
+          height: 650px;
+        } 
+    
+        .card:hover .card__box__color{
+          background-color:#ff90be;
+          height: 180px;
+        }
+    
+        .card__box__text__link:hover{
+          text-decoration: none;
+          color: #d47d97;
+          font-size: 1.7em;
+        }
+    
+        .card__box__text__link:focus{
+          text-decoration: none;
+          font-size: 1.7em;
+          outline: none;
+          background-color:#d47d97;
+          color:white;
+          border-radius:15px;
+          padding:8px;
+        }
+    
+        .card:hover .card__box__text__etc{
+          /* ... */
+          display:none;
+        }
+      }
+    }
+  
+  /*---------- Graphisme Carousel-------------*/
+
+  #Graphisme{
+    margin: auto; 
+    max-width: 1000px;
+    height: 1200px; 
+    padding: 80px 30px;
+
+    .carousel-control-next-icon {
+      background-color: rgb(99, 96, 96) !important;
+      border-radius:10px;
+      padding: 20px 20px;
+    }
+  
+    .carousel-control-prev-icon {
+      background-color: rgb(99, 96, 96) !important;
+      border-radius:10px;
+      padding: 20px 20px;
+    }
+  
+    /*----------Picture Carousel-------------*/
+    .avatarassis{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .femmeEscaliers{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .etudiante{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .alveole{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .noel{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .BD{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .souris{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /*-----VIDEOS-----*/
+  .youtube{
+    margin-top: 100px;
+    padding: 20px 20px;
+    width: 100%; 
+    height: auto;
+    background-color: black;
+
+    .youtube__flex{
+      display: flex;
+      background-color: black;
+    }
+  
+    .youtube__title{
+      margin-top: 50px;
+      margin-bottom: 20px;
+      margin-left:50px;
+    }
+  
+    .youtube__flex__clip{
+      margin-top: 80px;
+      margin-bottom: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  footer{
+    margin: 0;
+    padding: 0;
+      /*----------CONTACT-------------*/
+      #Contact{
+        max-width: 100%; 
+        height: 400px;
+        /*Image de fond */
+        background-image: url("Images/bannière2.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 23%;
+        margin-top: 100px;
+      }
+    
+      .Contact__container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:'Contact__container__titre'
+                            'Pied'
+                            'Contact__container__text'
+                            ; 
+      }
+    
+      .Contact__container__titre{
+        height: 50px;
+        margin-left:50px;
+      }
+    
+      .Contact__container__text{
+        height: 50px;
+        margin-left:50px;
+        font-size: 18px;
+      }
+    
+      .Pied{
+        height: 50px;
+        margin-top: 50px;
+        text-align:center;
+        /* --FLEX COLUMN--*/
+        display: flex;
+      }
+    
+      .Pied_icones{
+        font-size: 4em;
+        color:#b7c2c5;
+        transition: all 1s ease-out;
+        margin-left: 50px;
+    
+        &:hover{
+          color: #e994d5;
+          font-size: 4.3em;
+        }
+      }
+    }
+  }
+}
+
+
+/*-----MEDIA QUERIES-----*/
+
+/*----------FORMAT TABLETTE Vertical--------------*/
+
+@media screen and (max-width: 1200px) {
+
+  /*-----HEADER------*/
+
+  .objectifText{
+      padding: 30px 30px;
+      margin-left: 30px;
+      width: 50vw;
+      position: relative;
+      z-index: 4;
+      top: -900px;
+      justify-content: right;
+      /*TEXT*/
+      color: white;
+      font-family: Helvetica;
+      font-size: 1.3em;
+      font-weight: 500;
+  }
+
+  /* -----COMPETENCES --> IMAGE------*/
+
+  .Competences--flex--dev_pictureone{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 180px;
+  }
+
+  .Competences--flex--logiciel_picturetwo{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 130px;
+  }
+
+  .Competences--flex--SoftSkill_picturethree{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 110px;
+  }
+
+   /*VIDEOS*/
+
+  .youtube__flex{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .youtube__title{
+      margin-top: 40px;
+  }
+
+  .youtube__flex__clip{
+      margin-top: 25px;
+      margin-bottom: 70px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+ 
+
+}
+
+
+@media screen and (max-width: 1600px) {
+
+  .objectifText{
+      display: none;
+  }
+
+  .NoDesktop{
+      display: block;
+      color: lightgray;
+  }
+
+   /* -----COMPETENCES --> IMAGE------*/
+
+   .Competences--flex--dev_pictureone{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 180px;
+  }
+
+  .Competences--flex--logiciel_picturetwo{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 130px;
+  }
+
+  .Competences--flex--SoftSkill_picturethree{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 110px;
+  }
+
+   /*VIDEOS*/
+
+  .youtube__flex{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .youtube__title{
+      margin-top: 40px;
+  }
+
+  .youtube__flex__clip{
+      margin-top: 25px;
+      margin-bottom: 70px;
+
+      margin-left: auto;
+      margin-right: auto;
+  }
+ 
+
+}
+
+/*--------SMARTPHONE--------*/
+@media screen and (max-width: 1300px) {
+  /*HEADER*/
+  header {
+      display: flex;
+      flex-direction: column;
+      min-height: 130vh;
+      position: relative;
+        /*Parallax*/
+      transform-style: preserve-3d;
+   }
+   
+   header::before { 
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background-image: url("../Portfolio/Images/bannieretablette.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+  
+      /*Parallax*/
+      transform: translateZ(-2px);
+      transform: translateZ(-4px) scale(2.1); /*corrige taille image*/
+   }
+
+   #Accueil {
+      position: absolute;
+      z-index: 1;
+      top: 17%;
+      padding: 0 30px;
+  
+      /*Parallax*/
+      transform: translateZ(-2px);
+      transform: translateZ(-2px) scale(1.2); /*corrige taille texte*/
+   }
+  
+   .Accueil--name{
+      font-size: 5rem;
+      font-weight: 700;
+      padding-bottom: 20px;
+      color: white;
+   }
+  
+   .Accueil--webDev{
+      font-size: 3rem;
+      color: lightblue;
+   }
+
+   .objectifText{
+      display: none;
+  }
+
+
+  .icones{
+      margin-top: 30px;;
+      margin-left: 30px;
+      position: relative;
+      z-index: 5;
+  }
+  
+       
+   .icones_icones{
+       font-size: 3em;
+       color: white;
+   }
+  
+   .icones_icones:hover{
+      font-size: 3.2em;
+      color: plum;
+   }
+      
+  /*CONTAINER FLEX*/
+
+  /*Button*/
+  .Menu_link{
+      height: 5vw;
+      width: 20vw;
+      background-color: black;
+      text-align: center;
+      padding: 10px 10px;
+      border: none;
+      text-decoration: none;
+      color: white;
+      font-family: 'Lekton', sans-serif;
+      font-weight: 700;
+      font-size: 1.5em;
+  }
+
+  .NoDesktop{
+      display: block;
+      color: lightgray;
+  }
+
+  /*COMPETENCE*/
+  .Competences--flextext{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  #Formations{
+      width: 100%; 
+      height: 1400px;
+      background-image: url("../Portfolio/Images/effetthree.png"), url("../Portfolio/Images/effettwo.png"), url("../Portfolio/Images/effetone.png");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 100%, 100%, 100%;
+      background-position-y: 60%, 60%, 60%;
+  }
+
+  /* ---- PORTFOLIO -----*/
+  .grid{
+      grid-column-gap: 126px;
+  }
+
+  #Portfolio{
+      width: auto;
+      /*MARGIN*/
+      margin-top: 0px;
+      margin-left: auto; 
+      margin-right: auto;
+      padding: 20px 20px;
+      background-color: white;
+      border-radius: 30px;
+  }
+
+  /*VIDEOS*/
+  .youtube__flex{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .youtube__title{
+      margin-top: 40px;
+  }
+  
+  .youtube__flex__clip{
+      margin-top: 25px;
+      margin-bottom: 70px;
+  
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+}
+
+/*---------ZOOM 300---------*/
+@media screen and (max-width: 800px) {
+  
+  /*HEADER*/
+  header {
+      display: flex;
+      flex-direction: column;
+      min-height: 130vh;
+      position: relative;
+      /*Parallax*/
+      transform-style: preserve-3d;
+   }
+   
+   header::before { 
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background-image: url("../Portfolio/Images/bannieregsm.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+  
+      /*Parallax*/
+      transform: translateZ(-2px);
+      transform: translateZ(-4px) scale(2.1); /*corrige taille image*/
+   }
+
+   #Accueil {
+      position: absolute;
+      z-index: 1;
+      top: 17%;
+      padding: 0 30px;
+  
+      /*Parallax*/
+      transform: translateZ(-2px);
+      transform: translateZ(-2px) scale(1.2); /*corrige taille texte*/
+   }
+  
+   .Accueil--name{
+      font-size: 4rem;
+      font-weight: 700;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      color: white;
+   }
+  
+   .Accueil--webDev{
+      padding-top: 15px;
+      font-size: 3rem;
+      color: lightblue;
+   }
+
+    /*----------- MENU -----------*/
+
+   #Menu{
+    display: none;
+  }
+
+   .objectifText{
+      display: none;
+  }
+
+  .icones{
+      display: flex;
+      margin-top: 30px;;
+      margin-left: 50px;
+      position: relative;
+      z-index: 5;
+  }
+  
+       
+   .icones_icones{
+      font-size: 2.3em;
+      color: white;
+   }
+  
+   .icones_icones:hover{
+      font-size: 2.3em;
+      color: plum;
+   }
+
+   /*-----------A PROPOS-----------*/
+
+  #Apropos{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .NoDesktop{
+      display: block;
+      color: lightgray;
+  }
+
+  .Apropos--image_text{
+      font-size: 1.3em;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+  }
+
+  .Apropos_textone{
+      border: 0px;
+      border-style: none none none none;
+      padding-left: 0px;
+  }
+
+  /*COMPETENCE*/
+  .Competences--flextext{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  /* -----COMPETENCES --> IMAGE------*/
+
+  .Competences--flex--dev_pictureone{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 180px;
+  }
+
+  .Competences--flex--logiciel_picturetwo{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 130px;
+  }
+
+  .Competences--flex--SoftSkill_picturethree{
+      width: 210px;
+      height: 210px;
+      background-size: 210px, 110px;
+  }
+
+  /* ----  FORMATION -----*/
+  #Formations{
+      height: 80%;
+      margin-left: auto; 
+      margin-right: auto;
+  }
+
+  .Formations--text_para{
+      font-size: 1.3em;
+  }
+  
+  .Formations--text_para_importanttwo{
+      color: #448fae;
+  }
+
+  /* ---- TRAVAUX -----*/
+
+  .card__box__color{
+      /*CARD FOND RECTANGLE DE COULEUR*/
+      width: 300px;
+  }
+
+  .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+
+  .vueProject{
+      grid-column: 1; grid-row: 1;
+  }
+
+  .pageAnimate{
+      grid-column: 1; grid-row: 2;
+  }
+
+  .buttonbox{
+      grid-column: 1; grid-row: 3;
+  }
+
+  .pomodoro{
+      grid-column: 1; grid-row: 4;
+  }
+
+  .burgerbox{
+      grid-column: 1; grid-row: 5;
+  }
+
+  .forumbox{
+      grid-column: 1; grid-row: 6;
+  }
+
+  .museumbox{
+      grid-column: 1; grid-row: 7;
+  }
+
+  .wordPressSite{
+      grid-column: 1; grid-row: 8;
+  }
+
+  /* ---- PORTFOLIO -----*/
+  #Portfolio{
+      width: auto;
+      height: auto;
+      /*MARGIN*/
+      margin-top: 0px;      
+      margin-left: 15%; 
+      margin-right: 15%;
+      max-height: 5000px;
+  }
+
+  #Graphisme{
+      height: auto;
+  }
+
+  /* ---- CARD PORTFOLIO-----*/
+
+  .card{
+      /*CONTAINER CARD*/
+      border: none;
+      /*SIZE CARD*/
+      width: 300px;
+      height: 380px;
+      /* height: 680px; */
+      background-color: white;
+      /*SHODOW*/
+      /*site : https://html-css-js.com/css/generator/box-shadow/*/
+      -webkit-box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54); 
+      box-shadow: 14px 20px 34px 4px rgba(204,151,167,0.54);
+      /*ANIM*/
+      transition: all 1s ease-out;
+          /*INVISIBLE*/
+      overflow: hidden;
+  }
+
+  /*VIDEOS*/
+
+  .youtube__flex{
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin: 4rem;
+  }
+
+  .youtube__title{
+      margin-top: 40px;
+  }
+  
+  .youtube__flex__clip{
+      margin-top: 25px;
+      margin-bottom: 70px;
+  
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+}
+
