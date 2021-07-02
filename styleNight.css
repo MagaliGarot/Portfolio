@@ -176,27 +176,12 @@ header::before {
 }
 
 .icones .icones_icones:focus {
-  color: #050002;
+  color: #cc97a7;
   outline: none;
 }
 
 .icones #nigthTrue {
-  padding: 5px;
-  font-size: 2rem;
-  width: 5.5rem;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  background: #17687c;
-  color: white;
   display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.icones #nigthTrue i {
-  padding: 4px;
 }
 
 .icones #nigthFalse {
@@ -214,10 +199,22 @@ header::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .icones #nigthFalse i {
   padding: 4px;
+}
+
+.icones #nigthFalse:focus {
+  background: white;
+  color: #a82997;
+}
+
+.icones #nigthFalse:hover {
+  background: white;
+  color: #a82997;
 }
 
 .objectifText {
@@ -279,14 +276,14 @@ header::before {
 #Menu .Menu_link:hover {
   color: #cc97a7;
   font-weight: 800;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
 #Menu .Menu_link:focus {
   color: #cc97a7;
   font-weight: 800;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-decoration: none;
   outline: 2px solid white;
   outline-offset: -6px;
@@ -304,7 +301,21 @@ section {
 /* --ESPACE ENTRE LE HEADER ET LA SUITE-*/
 #espacewhite {
   background-color: black;
-  height: 8vw;
+  height: 12rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#espacewhite a:hover {
+  color: #cc97a7;
+}
+
+#espacewhite a:focus {
+  color: #cc97a7;
 }
 
 /*-----------A PROPOS-----------*/
@@ -508,7 +519,7 @@ section {
   width: 100%;
   height: 100%;
   max-width: 1000px;
-  max-height: 4000px;
+  max-height: 8000px;
   margin-top: -400px;
   margin-left: auto;
   margin-right: auto;
@@ -635,7 +646,7 @@ section {
 #Portfolio .card__box__text__link {
   text-decoration: none;
   color: #cc97a7;
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: 600;
 }
 
@@ -824,12 +835,12 @@ section {
 
 #Contact .Pied_icones:hover {
   color: #e994d5;
-  font-size: 4.3em;
+  font-size: 4em;
 }
 
 #Contact .Pied_icones:focus {
   color: black;
-  font-size: 4.3em;
+  font-size: 4em;
   outline: none;
 }
 
@@ -854,17 +865,17 @@ section {
     font-weight: 500;
   }
   /* -----COMPETENCES --> IMAGE------*/
-  .Competences--flex--dev_pictureone {
+  #Competences .Competences--flex--dev_pictureone {
     width: 210px;
     height: 210px;
     background-size: 210px, 180px;
   }
-  .Competences--flex--logiciel_picturetwo {
+  #Competences .Competences--flex--logiciel_picturetwo {
     width: 210px;
     height: 210px;
     background-size: 210px, 130px;
   }
-  .Competences--flex--SoftSkill_picturethree {
+  #Competences .Competences--flex--SoftSkill_picturethree {
     width: 210px;
     height: 210px;
     background-size: 210px, 110px;
@@ -894,9 +905,12 @@ section {
   .objectifText {
     display: none;
   }
-  .NoDesktop {
+  #Apropos .NoDesktop {
     display: block;
+  }
+  #Apropos .NoDesktop p {
     color: white;
+    margin-bottom: 50px;
   }
   /* -----COMPETENCES --> IMAGE------*/
   .Competences--flex--dev_pictureone {
@@ -1025,9 +1039,12 @@ section {
     font-weight: 700;
     font-size: 1.5em;
   }
-  .NoDesktop {
+  #Apropos .NoDesktop {
     display: block;
+  }
+  #Apropos .NoDesktop p {
     color: white;
+    margin-bottom: 50px;
   }
   /*COMPETENCE*/
   .Competences--flextext {
@@ -1063,7 +1080,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     padding: 20px 20px;
-    background-color: white;
+    background-color: black;
     border-radius: 30px;
   }
   /*VIDEOS*/
@@ -1185,9 +1202,12 @@ section {
     height: 200px;
     margin-bottom: 20px;
   }
-  .NoDesktop {
+  #Apropos .NoDesktop {
     display: block;
+  }
+  #Apropos .NoDesktop p {
     color: white;
+    margin-bottom: 50px;
   }
   .Apropos--image_text {
     font-size: 1.3em;
@@ -1312,6 +1332,7 @@ section {
     margin-left: 15%;
     margin-right: 15%;
     max-height: 5000px;
+    background-color: black;
   }
   #Graphisme {
     height: auto;
@@ -1325,10 +1346,6 @@ section {
     height: 380px;
     /* height: 680px; */
     background-color: white;
-    /*SHODOW*/
-    /*site : https://html-css-js.com/css/generator/box-shadow/*/
-    -webkit-box-shadow: 14px 20px 34px 4px rgba(204, 151, 167, 0.54);
-    box-shadow: 14px 20px 34px 4px rgba(204, 151, 167, 0.54);
     /*ANIM*/
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;

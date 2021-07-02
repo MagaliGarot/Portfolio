@@ -114,6 +114,16 @@ header::before {
 }
 
 /*-----------ACCUEIL-----------*/
+.firefly {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  background-color: #ecc45e;
+  -webkit-box-shadow: 0px 0px 17px 2px wheat;
+          box-shadow: 0px 0px 17px 2px wheat;
+  border-radius: 50%;
+}
+
 #Accueil {
   position: absolute;
   z-index: 1;
@@ -191,29 +201,28 @@ header::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .icones #nigthTrue i {
   padding: 4px;
 }
 
-.icones #nigthFalse {
-  padding: 5px;
-  display: none;
-  font-size: 2rem;
-  width: 5.5rem;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  background: #ef8bd4;
-  color: white;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.icones #nigthTrue:focus {
+  outline: none;
+  background: black;
+  color: #17687c;
 }
 
-.icones #nigthFalse i {
-  padding: 4px;
+.icones #nigthTrue:hover {
+  outline: none;
+  background: black;
+  color: #17687c;
+}
+
+.icones #nigthFalse {
+  display: none;
 }
 
 .objectifText {
@@ -275,14 +284,14 @@ header::before {
 #Menu .Menu_link:hover {
   color: #cc97a7;
   font-weight: 800;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
 #Menu .Menu_link:focus {
   color: #cc97a7;
   font-weight: 800;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-decoration: none;
   outline: 2px solid white;
   outline-offset: -6px;
@@ -300,7 +309,21 @@ section {
 /* --ESPACE ENTRE LE HEADER ET LA SUITE-*/
 #espacewhite {
   background-color: white;
-  height: 8vw;
+  height: 12rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#espacewhite a:hover {
+  color: #cc97a7;
+}
+
+#espacewhite a:focus {
+  color: #cc97a7;
 }
 
 /*-----------A PROPOS-----------*/
@@ -499,7 +522,7 @@ section {
   width: 100%;
   height: 100%;
   max-width: 1000px;
-  max-height: 4000px;
+  max-height: 8000px;
   margin-top: -400px;
   margin-left: auto;
   margin-right: auto;
@@ -635,12 +658,12 @@ section {
 #Portfolio .card__box__text__link:hover {
   text-decoration: none;
   color: #d47d97;
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 #Portfolio .card__box__text__link:focus {
   text-decoration: none;
-  font-size: 1.7em;
+  font-size: 1.6em;
   outline: none;
   background-color: #d47d97;
   color: white;
@@ -816,12 +839,12 @@ section {
 
 #Contact .Pied_icones:hover {
   color: #e994d5;
-  font-size: 4.3em;
+  font-size: 4em;
 }
 
 #Contact .Pied_icones:focus {
   color: black;
-  font-size: 4.3em;
+  font-size: 4em;
   outline: none;
 }
 
@@ -886,22 +909,25 @@ section {
   .objectifText {
     display: none;
   }
-  .NoDesktop {
+  #Apropos .NoDesktop {
     display: block;
-    color: lightgray;
+  }
+  #Apropos .NoDesktop p {
+    color: gray;
+    margin-bottom: 50px;
   }
   /* -----COMPETENCES --> IMAGE------*/
-  .Competences--flex--dev_pictureone {
+  #Competences .Competences--flex--dev_pictureone {
     width: 210px;
     height: 210px;
     background-size: 210px, 180px;
   }
-  .Competences--flex--logiciel_picturetwo {
+  #Competences .Competences--flex--logiciel_picturetwo {
     width: 210px;
     height: 210px;
     background-size: 210px, 130px;
   }
-  .Competences--flex--SoftSkill_picturethree {
+  #Competences .Competences--flex--SoftSkill_picturethree {
     width: 210px;
     height: 210px;
     background-size: 210px, 110px;
@@ -999,7 +1025,7 @@ section {
     color: white;
   }
   .icones_icones:hover {
-    font-size: 3.2em;
+    font-size: 3em;
     color: plum;
   }
   /*CONTAINER FLEX*/
@@ -1017,9 +1043,12 @@ section {
     font-weight: 700;
     font-size: 1.5em;
   }
-  .NoDesktop {
+  #Apropos .NoDesktop {
     display: block;
-    color: lightgray;
+  }
+  #Apropos .NoDesktop p {
+    color: gray;
+    margin-bottom: 50px;
   }
   /*COMPETENCE*/
   .Competences--flextext {
@@ -1177,9 +1206,12 @@ section {
     height: 200px;
     margin-bottom: 20px;
   }
-  .NoDesktop {
+  #Apropos .NoDesktop {
     display: block;
-    color: lightgray;
+  }
+  #Apropos .NoDesktop p {
+    color: gray;
+    margin-bottom: 50px;
   }
   .Apropos--image_text {
     font-size: 1.3em;
