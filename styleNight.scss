@@ -94,7 +94,7 @@ body{
 
 /*-----------HEADER-----------*/
 
-#NightPicture{
+header{
   width: 100%;
   min-height: 130vh;
   position: relative;
@@ -102,7 +102,7 @@ body{
   transform-style: preserve-3d;
 }
 
-#NightPicture::before{
+header::before{
   /*Parallax*/
   content: "";
   position: absolute;
@@ -293,10 +293,6 @@ section{
   padding: 10px 50px;
 
   #Apropos_textone_top{
-    color: white;
-  }
-
-  #Apropos_textone_phone{
     color: white;
   }
   
@@ -868,7 +864,7 @@ section{
 
   .NoDesktop{
       display: block;
-      color: lightgray;
+      color: white;
   }
 
    /* -----COMPETENCES --> IMAGE------*/
@@ -933,7 +929,7 @@ section{
       right: 0;
       bottom: 0;
       display: block;
-      background-image: url("../Portfolio/Images/bannieretablette.png");
+      background-image: url("../Portfolio/Images/paysage-pour-site-mode-nuit-tablette.png");
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 0;
@@ -1008,7 +1004,7 @@ section{
 
   .NoDesktop{
       display: block;
-      color: lightgray;
+      color: white;
   }
 
   /*COMPETENCE*/
@@ -1086,7 +1082,7 @@ section{
       right: 0;
       bottom: 0;
       display: block;
-      background-image: url("../Portfolio/Images/bannieregsm.png");
+      background-image: url("../Portfolio/Images/paysage-pour-site-mode-nuit-gsm.png");
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 0;
@@ -1163,7 +1159,7 @@ section{
 
   .NoDesktop{
       display: block;
-      color: lightgray;
+      color: white;
   }
 
   .Apropos--image_text{
