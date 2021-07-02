@@ -10,12 +10,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         
-        <link rel = "stylesheet" href="style.css">
+        <link id="css" rel = "stylesheet" type="text/css" href="style.css">
+        <!-- <link id="CssNight" rel = "stylesheet" type="text/css" href="styleNight.css"> -->
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"/>
     </head>
 
     <body>
-        <header>   
+        <header class="DayPicture" id="NightPicture">   
             <!-- HERO -->
             <div id="Accueil"> 
                 <h1 class ="Accueil--name">Magali Garot </h1> 
@@ -23,6 +24,14 @@
             </div>
 
             <div class="icones">
+                <button onclick="document.getElementById('css').href='styleNight.css';" id="nigthTrue" aria-label="Mettre le site en thème sombre">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                </button>
+                <button onclick="document.getElementById('css').href='style.css';" id="nigthFalse" aria-label="Mettre le site en thème clair">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                    <i class="far fa-lightbulb" aria-hidden="true"></i>
+                </button>
                 <a class="icones_icones" aria-label="Lien vers ma page github" href="https://github.com/MagaliGarot" target="_blank">
                     <i class="fab fa-github-square" aria-hidden="true"></i>
                 </a>
@@ -35,22 +44,17 @@
             </div>
 
             <div class="objectifText">
-                    <strong >Objectif :</strong>
-                    <br> 
-                    <br>
-                    Trouver un nouveau challenge comme
-                    <br>
-                    <strong>Web développeuse Junior</strong>.
-                    <br>
-                    Après une formation à 
-                    <strong> BeCode Liège </strong>, 
-                    <br>
-                    dans le web développement, 
-                    <br>
-                    j'ai réalisé un stage de trois mois orienté 
-                    <strong>vue.js</strong> 
-                    et 
-                    <strong>accessibilité web</strong>.
+                <br>
+                Trouver un nouveau challenge comme
+                <strong>Web développeuse Junior</strong>.
+                <br>
+                Après une formation à 
+                <strong> BeCode Liège </strong>, 
+                dans le web développement, 
+                j'ai réalisé un stage de trois mois orienté 
+                <strong>vue.js</strong> 
+                et 
+                <strong>accessibilité web</strong>.
             </div>
         </header>
                <!-- MENU -->
@@ -64,24 +68,24 @@
 
         <main>
             <section class="Totalbox">
-                <div class="espacewhite"></div>
+                <div id="espacewhite"></div>
                 <div id="Apropos">
                     <div class="Apropos--image">
                         <img alt="" class="Apropos--image_link" src="../Portfolio/Images/profil.jpeg"/>
                         <p class="Apropos--image_text"> 
                             <span class="Apropos--image_text_icone">
-                                <i id="iconeorange" class="fas fa-user" aria-hidden="true"></i>
+                                <i id="IconeorangeOne" class="fas fa-user" aria-hidden="true"></i>
                             </span>Née le 26/09/1989 à Namur
                             <br>
                             <span class="Apropos--image_text_icone">
-                                <i id="iconeorange" class="fas fa-globe-asia" aria-hidden="true"></i>
+                                <i id="iconeOrangeTwo" class="fas fa-globe-asia" aria-hidden="true"></i>
                             </span>Nationalité : Belge
                         </p>
                     </div>
                     <div class="Apropos_textone">
                         <div class="NoDesktop">
                             <h2>Objectif :</h2>
-                            <p>
+                            <p id="Apropos_textone_phone">
                                 <br>
                                 Trouver un nouveau challenge comme
                                 <strong>Web développeuse Junior</strong>.
@@ -96,7 +100,7 @@
                             </p>
                         </div>
                         <h2> À propos </h2>
-                        <p class="Apropos_textone_top"> 
+                        <p id="Apropos_textone_top"> 
                             Depuis toujours attirée par l’aspect visuel et la technologie, 
                             je me suis tournée très jeune vers le dessin et les programmes informatiques. 
                         </p>
@@ -193,7 +197,7 @@
                 <div id="Formations"> 
                     <div class="Formations--text">
                         <h2>Formations</h2>
-                        <p class="Formations--text_para"> 
+                        <p id="Formations--text_para"> 
                             <a class="linkSchool" aria-label="Lien vers le site BeCode" href="https://becode.org/fr/" target="_blank">
                                 <img class="Formations--text_para_important_logo" src="Images/logoBeCode.png" alt=""/>
                             </a>
@@ -213,7 +217,7 @@
                             <a class="linkSchool" aria-label="Lien vers le site de Saint-Luc Liège" href="https://www.saint-luc.be/" target="_blank">
                                 <img class="Formations--text_para_important_logo" src="Images/logoStLuc.png" alt=""/>
                             </a>
-                            <strong class="Formations--text_para_importanttwo">
+                            <strong id="Formations--text_para_importanttwo">
                                 2007-2010 : Bachelier en arts plastiques visuels et de l'espace, 
                                 </br>
                                 Saint-Luc Liège.
@@ -239,7 +243,6 @@
                         <p>Désactiver la navigation clavier</p>
                     </button> -->
                     <div class="grid">
-
                         <!-- BURGER -->
                         <div class="burgerbox">
                             <article class="card" id="cardWorkOne">
@@ -729,19 +732,19 @@
                 </div>
 
                 <!-- VIDEOS YOUTUBE-->
-                <div class="youtube">
+                <div id="youtube">
                     <h2 class="youtube__title"> 
                         Vidéos réalisées avec After Effects
                     </h2>
                     <section class="youtube__flex">
                         <div class="youtube__flex__clip">
-                            <iframe width="500" height="350" src="https://www.youtube.com/embed/0ZpNUonKwxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe title="Vidéo YouTube : Projet Animation d'un paysage vectoriel avec After Effects" width="500" height="350" src="https://www.youtube.com/embed/0ZpNUonKwxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="youtube__flex__clip">
-                            <iframe width="500" height="350" src="https://www.youtube.com/embed/yFArTGDWoHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe title="Vidéo YouTube : Projet Animation d'un logo vectoriel avec After Effects" width="500" height="350" src="https://www.youtube.com/embed/yFArTGDWoHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="youtube__flex__clip">
-                            <iframe width="500" height="350" src="https://www.youtube.com/embed/UQjyHnTeq00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe title="Vidéo YouTube : Projet Animation d'un toucan vectoriel avec After Effects" width="500" height="350" src="https://www.youtube.com/embed/UQjyHnTeq00" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </section>
                 </div>
@@ -768,7 +771,7 @@
                         </a>
                     </div>
                 </div>
-                <p class="Contact__container__text"> 
+                <p id="Contact__container__text"> 
                     <i>
                         © 2020 Magali Garot
                         <br>

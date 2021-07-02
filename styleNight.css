@@ -12,6 +12,10 @@ body {
   padding: 0;
 }
 
+main {
+  background-color: black;
+}
+
 footer {
   margin: 0;
   padding: 0;
@@ -83,7 +87,7 @@ body {
 }
 
 /*-----------HEADER-----------*/
-header {
+#NightPicture {
   width: 100%;
   min-height: 130vh;
   position: relative;
@@ -92,7 +96,7 @@ header {
           transform-style: preserve-3d;
 }
 
-header::before {
+#NightPicture::before {
   /*Parallax*/
   content: "";
   position: absolute;
@@ -101,7 +105,7 @@ header::before {
   right: 0;
   bottom: 0;
   display: block;
-  background-image: url("../Portfolio/Images/banniere.png");
+  background-image: url("../Portfolio/Images/paysage-pour-site-mode-nuit.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
@@ -185,9 +189,7 @@ header::before {
   margin-bottom: 15px;
   background: #17687c;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -199,7 +201,6 @@ header::before {
 
 .icones #nigthFalse {
   padding: 5px;
-  display: none;
   font-size: 2rem;
   width: 5.5rem;
   border: none;
@@ -207,6 +208,9 @@ header::before {
   margin-bottom: 15px;
   background: #ef8bd4;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -291,7 +295,7 @@ header::before {
 /*MAIN*/
 section {
   width: 100%;
-  background: white;
+  background: black;
   /*Prallax*/
   position: relative;
   z-index: 2;
@@ -299,7 +303,7 @@ section {
 
 /* --ESPACE ENTRE LE HEADER ET LA SUITE-*/
 #espacewhite {
-  background-color: white;
+  background-color: black;
   height: 8vw;
 }
 
@@ -313,6 +317,14 @@ section {
   max-width: 1000px;
   padding: 10px 50px;
   /*color small icone*/
+}
+
+#Apropos #Apropos_textone_top {
+  color: white;
+}
+
+#Apropos #Apropos_textone_phone {
+  color: white;
 }
 
 #Apropos .Apropos--image_text {
@@ -462,6 +474,7 @@ section {
 
 #Formations #Formations--text_para {
   font-weight: 600;
+  color: white;
 }
 
 #Formations #Formations--text_para a {
@@ -473,7 +486,7 @@ section {
 }
 
 #Formations #Formations--text_para_importanttwo {
-  color: #3b83a1;
+  color: #cae8f5;
 }
 
 #Formations .Formations--text_para_important_logo {
@@ -504,7 +517,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   padding: 50px 50px;
-  background-color: white;
+  background-color: black;
   border-radius: 30px;
   /* ---- CARD PORTFOLIO-----*/
   /*CARD COLOR*/
@@ -560,8 +573,6 @@ section {
   height: 340px;
   /* height: 680px; */
   background-color: white;
-  -webkit-box-shadow: 14px 20px 34px 4px rgba(204, 151, 167, 0.54);
-  box-shadow: 14px 20px 34px 4px rgba(204, 151, 167, 0.54);
   /*ANIM*/
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
@@ -794,6 +805,7 @@ section {
   height: 50px;
   margin-left: 50px;
   font-size: 18px;
+  color: white;
 }
 
 #Contact .Pied {
@@ -1349,4 +1361,4 @@ section {
     margin-right: auto;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleNight.css.map */
