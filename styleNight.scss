@@ -452,7 +452,7 @@ section{
   }
   
   #Formations--text_para_importanttwo{
-    color: #cae8f5;
+    color: #80b5cc;
   }
   
   /* --Logo BeCode et Saint-Luc--*/
@@ -882,22 +882,24 @@ section{
 
    /* -----COMPETENCES --> IMAGE------*/
 
-   .Competences--flex--dev_pictureone{
+   #Competences{
+    .Competences--flex--dev_pictureone{
       width: 210px;
       height: 210px;
       background-size: 210px, 180px;
-  }
+    }
 
-  .Competences--flex--logiciel_picturetwo{
-      width: 210px;
-      height: 210px;
-      background-size: 210px, 130px;
-  }
+    .Competences--flex--logiciel_picturetwo{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 130px;
+    }
 
-  .Competences--flex--SoftSkill_picturethree{
-      width: 210px;
-      height: 210px;
-      background-size: 210px, 110px;
+    .Competences--flex--SoftSkill_picturethree{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 110px;
+    }
   }
 
    /*VIDEOS*/
@@ -1207,22 +1209,24 @@ section{
 
   /* -----COMPETENCES --> IMAGE------*/
 
-  .Competences--flex--dev_pictureone{
+  #Competences{
+    .Competences--flex--dev_pictureone{
       width: 110px;
       height: 210px;
       background-size: 210px, 180px;
-  }
+    }
 
-  .Competences--flex--logiciel_picturetwo{
-      width: 210px;
-      height: 210px;
-      background-size: 210px, 130px;
-  }
+    .Competences--flex--logiciel_picturetwo{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 130px;
+    }
 
-  .Competences--flex--SoftSkill_picturethree{
-      width: 210px;
-      height: 210px;
-      background-size: 210px, 110px;
+    .Competences--flex--SoftSkill_picturethree{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 110px;
+    }
   }
 
   /* ----  FORMATION -----*/

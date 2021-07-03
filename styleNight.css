@@ -493,7 +493,7 @@ section {
 }
 
 #Formations #Formations--text_para_importanttwo {
-  color: #cae8f5;
+  color: #80b5cc;
 }
 
 #Formations .Formations--text_para_important_logo {
@@ -913,17 +913,17 @@ section {
     margin-bottom: 50px;
   }
   /* -----COMPETENCES --> IMAGE------*/
-  .Competences--flex--dev_pictureone {
+  #Competences .Competences--flex--dev_pictureone {
     width: 210px;
     height: 210px;
     background-size: 210px, 180px;
   }
-  .Competences--flex--logiciel_picturetwo {
+  #Competences .Competences--flex--logiciel_picturetwo {
     width: 210px;
     height: 210px;
     background-size: 210px, 130px;
   }
-  .Competences--flex--SoftSkill_picturethree {
+  #Competences .Competences--flex--SoftSkill_picturethree {
     width: 210px;
     height: 210px;
     background-size: 210px, 110px;
@@ -1235,17 +1235,17 @@ section {
     margin-left: auto;
   }
   /* -----COMPETENCES --> IMAGE------*/
-  .Competences--flex--dev_pictureone {
+  #Competences .Competences--flex--dev_pictureone {
     width: 110px;
     height: 210px;
     background-size: 210px, 180px;
   }
-  .Competences--flex--logiciel_picturetwo {
+  #Competences .Competences--flex--logiciel_picturetwo {
     width: 210px;
     height: 210px;
     background-size: 210px, 130px;
   }
-  .Competences--flex--SoftSkill_picturethree {
+  #Competences .Competences--flex--SoftSkill_picturethree {
     width: 210px;
     height: 210px;
     background-size: 210px, 110px;

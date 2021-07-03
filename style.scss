@@ -878,7 +878,6 @@ section{
    /* -----COMPETENCES --> IMAGE------*/
 
    #Competences{
-
     .Competences--flex--dev_pictureone{
       width: 210px;
       height: 210px;
@@ -977,18 +976,16 @@ section{
       display: none;
   }
 
-
   .icones{
       margin-top: 30px;;
       margin-left: 30px;
       position: relative;
       z-index: 5;
   }
-  
-       
+    
    .icones_icones{
-       font-size: 3em;
-       color: white;
+      font-size: 3em;
+      color: white;
    }
   
    .icones_icones:hover{
@@ -1206,22 +1203,24 @@ section{
 
   /* -----COMPETENCES --> IMAGE------*/
 
-  .Competences--flex--dev_pictureone{
+  #Competences{
+    .Competences--flex--dev_pictureone{
       width: 110px;
       height: 210px;
       background-size: 210px, 180px;
-  }
+    }
 
-  .Competences--flex--logiciel_picturetwo{
-      width: 210px;
-      height: 210px;
-      background-size: 210px, 130px;
-  }
+    .Competences--flex--logiciel_picturetwo{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 130px;
+    }
 
-  .Competences--flex--SoftSkill_picturethree{
-      width: 210px;
-      height: 210px;
-      background-size: 210px, 110px;
+    .Competences--flex--SoftSkill_picturethree{
+        width: 210px;
+        height: 210px;
+        background-size: 210px, 110px;
+    }
   }
 
   /* ----  FORMATION -----*/
