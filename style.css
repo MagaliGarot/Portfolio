@@ -20,7 +20,7 @@ footer {
 html {
   width: 100%;
   height: 100%;
-  /*Parallax --> element racine*/
+  /*Parallax*/
   overflow: hidden;
 }
 
@@ -254,6 +254,66 @@ header::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#Menu #burger {
+  display: none;
+  position: absolute;
+  top: -390px;
+  right: 45px;
+  width: 5rem;
+  height: 6rem;
+  line-height: 2;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  /*invisible text*/
+  /*permet de couper ce qui dépasse*/
+  overflow: hidden;
+  /*TRANSITION*/
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#Menu #burger .burger__icone {
+  color: white;
+  font-size: 3.8rem;
+  background: transparent;
+  border: none;
+}
+
+#Menu #burger .burger__icone:focus {
+  color: black;
+  outline: none;
+}
+
+#Menu #burger .burger__text {
+  font-family: 'Lekton', sans-serif;
+  font-size: 1em;
+  text-align: right;
+  font-weight: 600;
+  color: white;
+}
+
+#Menu #burger .burger__text:focus {
+  color: black;
+  outline: none;
+}
+
+#Menu #burger #closeBurgerButton {
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+}
+
+#Menu #burger #closeBurgerButton:focus {
+  color: black;
+  outline: none;
+}
+
+#Menu #burger:hover {
+  overflow: visible;
 }
 
 #Menu .Menu_link {
@@ -728,6 +788,11 @@ section {
   /*----------Picture Carousel-------------*/
 }
 
+#Graphisme .textGalerie {
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
 #Graphisme .carousel-control-next-icon,
 #Graphisme .carousel-control-prev-icon {
   background-color: #636060 !important;
@@ -1159,7 +1224,10 @@ section {
     color: lightblue;
   }
   /*----------- MENU -----------*/
-  #Menu {
+  #Menu #burger {
+    display: inline-block;
+  }
+  #Menu .Menu_link {
     display: none;
   }
   .objectifText {
@@ -1200,8 +1268,7 @@ section {
     display: block;
   }
   #Apropos .NoDesktop p {
-    color: gray;
-    margin-bottom: 50px;
+    color: #030202;
   }
   .Apropos--image_text {
     font-size: 1.3em;

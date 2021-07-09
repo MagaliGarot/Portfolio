@@ -33,6 +33,21 @@
     });
 })();
 
+(function() {
+    const button = document.getElementById("burgerButton");
+    button.addEventListener("click", function() {
+        document.getElementById("burger").style.cssText = "overflow: visible;"; 
+    });
+})();
+
+(function() {
+    const button = document.getElementById("closeBurgerButton");
+    button.addEventListener("click", function() {
+        document.getElementById("burger").style.cssText = "overflow: hidden;"; 
+    });
+})();
+
+//luciole
 //https://codepen.io/Mertl/pen/GexapP
 //https://codepen.io/slyka85/pen/BJEbVL
 

@@ -65,7 +65,7 @@ h4 {
 
 p {
   font-family: Helvetica;
-  color: gray;
+  color: white;
   font-size: 1.2em;
   font-weight: 500;
 }
@@ -335,7 +335,7 @@ section {
 }
 
 #Apropos .Apropos--image_text {
-  color: gray;
+  color: white;
   font-size: 1.3em;
   margin-top: 1.7vw;
 }
@@ -738,6 +738,10 @@ section {
   background-color: #636060 !important;
   border-radius: 10px;
   padding: 20px 20px;
+}
+
+#Graphisme .textGalerie {
+  font-weight: 600;
 }
 
 #Graphisme .avatarassis,

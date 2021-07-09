@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         
         <link id="css" rel = "stylesheet" type="text/css" href="style.css">
-        <!-- <link id="CssNight" rel = "stylesheet" type="text/css" href="styleNight.css"> -->
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"/>
     </head>
 
@@ -61,11 +60,32 @@
       
                <!-- MENU -->
             <nav id="Menu">
+                <div id="burger">
+                    <button aria-label="Burger menu" id="burgerButton" class="burger__icone">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <br>
+                    <a aria-label="Redirige vers Accueil sur la home page" class="burger__text" href="#Accueil">Accueil</a> 
+                    <br>
+                    <a aria-label="Redirige vers A propos sur la home page" class="burger__text" href="#Apropos">À Propos</a> 
+                    <br>
+                    <a aria-label="Redirige vers Compétences sur la home page" class="burger__text" href="#Competences">Compétences</a> 
+                    <br>
+                    <a aria-label="Redirige vers Portfolio sur la home page" class="burger__text" href="#Portfolio">Portfolio</a>
+                    <br>
+                    <a aria-label="Redirige vers Contact sur la home page" class="burger__text" href="#Contact">Contact</a> 
+                    <br>
+                    <button aria-label="Fermer le menu burger" id="closeBurgerButton" href="#Contact">
+                        <i class="far fa-times-circle"></i>
+                    </button> 
+                </div>
+            
                 <a class="Menu_link" href="#Accueil">Accueil</a> 
                 <a class="Menu_link" href="#Apropos">À Propos</a> 
                 <a class="Menu_link" href="#Competences">Compétences</a> 
                 <a class="Menu_link" href="#Portfolio">Portfolio</a>
                 <a class="Menu_link" href="#Contact">Contact</a> 
+               
             </nav>
 
         <main>
@@ -92,7 +112,6 @@
                         <div class="NoDesktop">
                             <h2>Objectif </h2>
                             <p>
-                                <br>
                                 Trouver un nouveau challenge comme
                                 <strong>Web développeuse Junior</strong>.
                                 <br>
@@ -263,12 +282,12 @@
                                     </div>
                                     <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/MagaliGarot/Burger-Project" target="_blank">
+                                        <a aria-label="Lien vers le github du projet Burger" class="card__box__text__link" href="https://github.com/MagaliGarot/Burger-Project" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://magaligarot.github.io/Burger-Project/" target="_blank">
+                                        <a aria-label="Lien vers la page du projet Burger" class="card__box__text__link" href="https://magaligarot.github.io/Burger-Project/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Lien vers le Visuel
                                         </a>
@@ -284,7 +303,7 @@
                                                 tout en trouvant les ressources externes sur le web (images, font, etc). 
                                             </i>
                                         </p>
-                                        <a class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/blob/master/01-main-course/02-the-hills/03-dribbble-challenges.md" target="_blank">
+                                        <a aria-label="Lien vers les consignes BeCode du projet Burger" class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/blob/master/01-main-course/02-the-hills/03-dribbble-challenges.md" target="_blank">
                                             <i aria-hidden="true" class="far fa-file-alt"></i>
                                             Lien vers les consignes
                                         </a>
@@ -307,20 +326,20 @@
                                     </div>
                                         <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/MagaliGarot/Animated-Button" target="_blank">
+                                        <a aria-label="Lien vers le github du projet Boutton animé" class="card__box__text__link" href="https://github.com/MagaliGarot/Animated-Button" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Button 
                                         </a>
-                                        <a class="card__box__text__link" href="https://github.com/MagaliGarot/Folder-Animate" target="_blank">
+                                        <a aria-label="Lien vers le github du projet Folder animé" class="card__box__text__link" href="https://github.com/MagaliGarot/Folder-Animate" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Folder 
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://magaligarot.github.io/Animated-Button/" target="_blank">
+                                        <a aria-label="Lien vers la page du projet Button animé" class="card__box__text__link" href="https://magaligarot.github.io/Animated-Button/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Button
                                         </a>
-                                        <a class="card__box__text__link" href="https://magaligarot.github.io/Folder-Animate/" target="_blank">
+                                        <a aria-label="Lien vers la page du projet Folder animé" class="card__box__text__link" href="https://magaligarot.github.io/Folder-Animate/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Folder
                                         </a>
@@ -358,12 +377,12 @@
                                     </div>
                                         <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/MagaliGarot/Page-Animate" target="_blank">
+                                        <a aria-label="Lien vers le github du projet d'une page animée" class="card__box__text__link" href="https://github.com/MagaliGarot/Page-Animate" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://magaligarot.github.io/Page-Animate/" target="_blank">
+                                        <a aria-label="Lien vers la page du projet page animée" class="card__box__text__link" href="https://magaligarot.github.io/Page-Animate/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Lien vers le Visuel
                                         </a>
@@ -382,7 +401,7 @@
                                         </p>
                                         <br>
                                         <br>
-                                        <a class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/blob/master/01-main-course/02-the-hills/03-dribbble-challenges.md" target="_blank">
+                                        <a aria-label="Lien vers les consignes BeCode du projet page animée" class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/blob/master/01-main-course/02-the-hills/03-dribbble-challenges.md" target="_blank">
                                             <i aria-hidden="true" class="far fa-file-alt"></i>
                                             Lien vers les consignes
                                         </a>
@@ -405,16 +424,16 @@
                                     </div>
                                         <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/JonathanMaillard/cms-restaurants" target="_blank">
+                                        <a aria-label="Lien vers le github du projet en WordPress" class="card__box__text__link" href="https://github.com/JonathanMaillard/cms-restaurants" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i> 
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="http://wordpress-restaurant.herokuapp.com/index.php/reservation/" target="_blank">
+                                        <a aria-label="Lien vers la page réservations du projet WordPress" class="card__box__text__link" href="http://wordpress-restaurant.herokuapp.com/index.php/reservation/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Reservations
                                         </a>
-                                        <a class="card__box__text__link" href="http://wordpress-restaurant.herokuapp.com/index.php/2021/01/21/butter-macarron/" target="_blank">
+                                        <a aria-label="Lien vers la page Articles du projet WordPress" class="card__box__text__link" href="http://wordpress-restaurant.herokuapp.com/index.php/2021/01/21/butter-macarron/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                            Articles
                                         </a>
@@ -431,7 +450,7 @@
                                             </i>
                                         </p>
                                         </br>
-                                        <a class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/03-the-mountain/02-cms-restaurant" target="_blank">
+                                        <a aria-label="Lien vers les consignes BeCode du projet WordPress" class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/03-the-mountain/02-cms-restaurant" target="_blank">
                                             <i aria-hidden="true" class="far fa-file-alt"></i>
                                             Lien vers les consignes
                                         </a>
@@ -453,13 +472,13 @@
                                         </p>
                                     </div>
                                     <br>
-                                    <div class="card__box__text">
+                                    <div aria-label="Lien vers le github de mon projet personnel en Vue.js" class="card__box__text">
                                         <a class="card__box__text__link" href="https://github.com/MagaliGarot/room-nuxt.js" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://chambresdhotes.netlify.app/" target="_blank">
+                                        <a aria-label="Lien vers la page de mon projet personnel en Vue.js" class="card__box__text__link" href="https://chambresdhotes.netlify.app/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Lien vers le Visuel
                                         </a>
@@ -494,12 +513,12 @@
                                     </div>
                                         <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/MagaliGarot/react-pomodoro" target="_blank">
+                                        <a aria-label="Lien vers le github du projet Pomodo" class="card__box__text__link" href="https://github.com/MagaliGarot/react-pomodoro" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://pomodoro-magali-garot.netlify.app/" target="_blank">
+                                        <a aria-label="Lien vers la page du projet Pomodo" class="card__box__text__link" href="https://pomodoro-magali-garot.netlify.app/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Lien vers le Visuel
                                         </a>
@@ -515,7 +534,7 @@
                                         </p>
                                     <br>
                                     <br>
-                                        <a class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/03-the-mountain/04-pomodoro" target="_blank">
+                                        <a aria-label="Lien vers les consignes BeCode du projet Pomodoro" class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/03-the-mountain/04-pomodoro" target="_blank">
                                             <i aria-hidden="true" class="far fa-file-alt"></i>
                                             Lien vers les consignes
                                         </a>
@@ -538,12 +557,12 @@
                                     </div>
                                     <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/Bertrand2/Badminton-Club-Bain-de-Bretagne" target="_blank">
+                                        <a aria-label="Lien vers github du projet Forum" class="card__box__text__link" href="https://github.com/Bertrand2/Badminton-Club-Bain-de-Bretagne" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="http://badminton-club-bb.herokuapp.com/" target="_blank">
+                                        <a aria-label="Lien vers la page du projet Forum" class="card__box__text__link" href="http://badminton-club-bb.herokuapp.com/" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Lien vers le Visuel
                                         </a>
@@ -561,12 +580,12 @@
                                         </p>
                                         <br>
                                         <br>
-                                        <a class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/02-the-hills/02-bcbb/01-basics" target="_blank">
+                                        <a aria-label="Lien vers la première consigne BeCode pour le projet Forum" class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/02-the-hills/02-bcbb/01-basics" target="_blank">
                                             <i aria-hidden="true" class="far fa-file-alt"></i>
                                             Consignes 1
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/02-the-hills/02-bcbb/02-advanced" target="_blank">
+                                        <a aria-label="Lien vers la deuxième consigne BeCode pour le projet Forum" class="card__box__text__link" href="https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/02-the-hills/02-bcbb/02-advanced" target="_blank">
                                             <i aria-hidden="true" class="far fa-file-alt"></i>
                                             Consignes 2
                                         </a>
@@ -589,16 +608,16 @@
                                     </div>
                                     <br>
                                     <div class="card__box__text">
-                                        <a class="card__box__text__link" href="https://github.com/MagaliGarot/Burger-Project" target="_blank">
+                                        <a aria-label="Lien vers le github du projet Museum" class="card__box__text__link" href="https://github.com/MagaliGarot/Burger-Project" target="_blank">
                                             <i aria-hidden="true" class="fab fa-github-alt"></i>
                                             Lien vers Github
                                         </a>
                                         <br>
-                                        <a class="card__box__text__link" href="https://magaligarot.github.io/Museum-Project/events.html" target="_blank">
+                                        <a aria-label="Lien vers la page Events du projet Museum" class="card__box__text__link" href="https://magaligarot.github.io/Museum-Project/events.html" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                             Events
                                         </a>
-                                        <a class="card__box__text__link" href="https://magaligarot.github.io/Museum-Project/event_details.html" target="_blank">
+                                        <a aria-label="Lien vers la page Events du projet Event-Details" class="card__box__text__link" href="https://magaligarot.github.io/Museum-Project/event_details.html" target="_blank">
                                             <i class="fa fa-external-link" aria-hidden="true"></i>
                                            Event-Details
                                         </a>
@@ -635,10 +654,14 @@
                     <h2 class="Graphisme_titre"> 
                         Graphisme & Illustrations
                     </h2>
+                    <!-- changer couleur suivant les styles + regarder sur disque dur pour ajouter un texte -->
+                    <p class="textGalerie">Ci-dessous un échantillon de mes illustrations et créations graphiques</p>
                      
                     <div id="picturecarousel">
+                        <!-- https://www.pierre-giraud.com/bootstrap-apprendre-cours/carrousel/ -->
                        <!-- BOOTSTRAP Carousel -->
-                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                       <!-- data-ride="carousel" -->
+                       <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -647,89 +670,89 @@
                         <div>
                         <div class="carousel-inner">
                             <!-- OISEAU BLEU -->
-                            <div class="carousel-item active">
+                            <div class="carousel-item active" data-interval="0">
                                 <img class="d-block w-100" src="carousel/illustration-vectorielle-liberte.jpg" alt="">
                             </div>
                             <!-- Avatar assis -->
-                            <div class="carousel-item center-block">
+                            <div class="carousel-item center-block" data-interval="0">
                                 <img class="d-block w-75 avatarassis" src="carousel/avatar-vectorielle.jpg" alt=""">
                             </div>
                             <!-- Femme dans les escaliers -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-75 femmeEscaliers" src="carousel/illustration-vectorielle-femme.png" alt="">
                             </div>
                             <!-- Paysage de nuit couleur différente -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/Paysage-vectoriel.jpg" alt="">
                             </div>
                             <!-- Paysage Bretagne -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/Paysage-vectoriel-Saint-Malo.jpg" alt="">
                             </div>
                             <!-- Paysage nuit ville arbre et bâtiment -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/paysage-vectoriel-night.jpg" alt="Third slide">
                             </div>
                             <!-- Etudiante -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-25 etudiante" src="carousel/personnage avatar.png" alt="">
                             </div>
                             <!-- Planche motion design avec le toucan beer -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/planche-motion-design-toucan.png" alt="">
                             </div>
                             <!-- Etiquettes beer toucan -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/etiquette-beer.jpg" alt="">
                             </div>
                             <!-- carte de visite normandie -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/carte-visite-chambres-hôtes.png" alt="">
                             </div>
                             <!-- carte de visite -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" v>
                                 <img class="d-block w-100" src="carousel/visuel-carte-visite.png" alt="">
                             </div>
                             <!--  logo Alveole -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-50 alveole" src="carousel/logo-alveole.jpg" alt="">
                             </div>
                             <!--  Carte pour Noël -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-75 noel" src="carousel/carte-Noel-vectorielle.jpg" alt="">
                             </div>
                             <!--  Logo nuage -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/logo-recherche.jpg" alt="">
                             </div>
                             <!--  ICONES -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/icones-hypothese.jpg" alt="">
                             </div>
                             <!-- Renard et blaireau pour rouzig thème Noël -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/Illustration-jeunesse-rouzig.jpg" alt="">
                             </div>
                             <!---  Planche de BD -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-75 BD" src="carousel/BD.jpeg" alt="">
                             </div>
                             <!-- Souris Rouzig -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-75 souris" src="carousel/souris.jpeg" alt="">
                             </div>
                             <!-- Randonnée Rouzig -->
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="0">
                                 <img class="d-block w-100" src="carousel/Randonnée.jpeg" alt="">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <a aria-label="Visuel précédent" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
+                          <span class="sr-only">Précédent</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <a aria-label="Visuel suivant" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
+                          <span class="sr-only">Suivant</span>
                         </a>
                         </div>
                       </div>

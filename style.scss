@@ -1,4 +1,9 @@
 /*-----------ALL GENERAL-----------*/
+//TO DO
+// faire burger sur les versions 
+// bouton animation au :hover
+// animation au scroll
+// lucioles ?
 
 *{
   margin: 0;
@@ -21,7 +26,7 @@ html{
   width: 100%;
   height: 100%;
 
-  /*Parallax --> element racine*/
+  /*Parallax*/
   overflow: hidden;
 }
 
@@ -33,6 +38,13 @@ a{
 @mixin effectIcone{
   -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
   filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
+}
+
+@mixin anim{
+  /*Permet un mouvement plus fluide*/
+  animation-timing-function: linear;
+  /*Animation non répétée*/
+  animation-fill-mode: forwards;
 }
 
 /*-----------FONTS-----------*/
@@ -231,6 +243,61 @@ header::before {
   background-color: black;
   align-items: center;
   justify-content: center;
+
+  #burger{
+    display: none;
+    position: absolute;
+    // border-radius: 10px;
+    top: -390px;
+    right: 45px;
+    width: 5rem;
+    height: 6rem;
+    line-height: 2;
+    transform: translateY(10%);
+     /*invisible text*/
+     /*permet de couper ce qui dépasse*/
+    overflow: hidden;
+    /*TRANSITION*/
+    transition: all 0.3s ease-out;
+
+    .burger__icone{
+      color: white;
+      font-size: 3.8rem;
+      background: transparent;
+      border: none;
+
+      &:focus{
+        color: black;
+        outline: none;
+      }
+    }
+
+    .burger__text{
+      font-family: 'Lekton', sans-serif;
+      font-size: 1em;
+      text-align: right;
+      font-weight: 600;
+      color: white;
+      &:focus{
+        color: black;
+        outline: none;
+      }
+    }
+    #closeBurgerButton{
+      background: transparent;
+      color: white;
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      &:focus{
+        color: black;
+        outline: none;
+      }
+    }
+    &:hover{
+      overflow: visible;
+    }
+  }
 
   .Menu_link{
     height: 60px;
@@ -683,6 +750,11 @@ section{
   height: 1200px; 
   padding: 80px 30px;
 
+  .textGalerie{
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+
   .carousel-control-next-icon, 
   .carousel-control-prev-icon {
     background-color: rgb(99, 96, 96) !important;
@@ -1132,31 +1204,38 @@ section{
    }
 
     /*----------- MENU -----------*/
+    #Menu{
 
-   #Menu{
+      #burger{
+        display: inline-block;
+      }
+
+      .Menu_link{
+        display: none;
+      }
+
+    }
+
+  .objectifText{
     display: none;
   }
 
-   .objectifText{
-      display: none;
-  }
-
   .icones{
-      display: flex;
-      margin-top: 30px;
-      margin-left: 20px;
-      position: relative;
-      z-index: 5;
-      font-size: 1em;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 5;
+    font-size: 1em;
 
-      .icones_icones{
-        font-size: 3em;
-        color: white;
-     }
+    .icones_icones{
+    font-size: 3em;
+    color: white;
+    }
     
-     .icones_icones:hover{
-        color: plum;
-     }
+    .icones_icones:hover{
+    color: plum;
+    }
   }
 
    /*-----------A PROPOS-----------*/
@@ -1168,16 +1247,13 @@ section{
         height: 200px;
         margin-bottom: 20px;
       }
-  }
+      .NoDesktop{
+        display: block;
+        p{
+          color: rgb(3, 2, 2);
 
-  #Apropos{
-    .NoDesktop{
-      display: block;
-      p{
-        color: gray;
-        margin-bottom: 50px;
+        }
       }
-    }
   }
 
   .Apropos--image_text{
