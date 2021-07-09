@@ -1,6 +1,5 @@
 /*-----------ALL GENERAL-----------*/
 //TO DO
-// faire burger sur les versions 
 // bouton animation au :hover
 // animation au scroll
 // lucioles ?
@@ -38,13 +37,6 @@ a{
 @mixin effectIcone{
   -webkit-filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
   filter: contrast(101%) brightness(71%) saturate(159%) sepia(100%) hue-rotate(290deg);
-}
-
-@mixin anim{
-  /*Permet un mouvement plus fluide*/
-  animation-timing-function: linear;
-  /*Animation non répétée*/
-  animation-fill-mode: forwards;
 }
 
 /*-----------FONTS-----------*/
@@ -202,7 +194,7 @@ header::before {
     }
     &:hover{
       outline: none;
-      background: black;
+      background: white;
       color: #17687c;
     }
   }
@@ -265,7 +257,11 @@ header::before {
       font-size: 3.8rem;
       background: transparent;
       border: none;
-
+      transition: all 1s ease-out;
+      &:hover{
+        color: #ef8bd4;
+        outline: none;
+      }
       &:focus{
         color: black;
         outline: none;
@@ -278,6 +274,11 @@ header::before {
       text-align: right;
       font-weight: 600;
       color: white;
+      transition: all 1s ease-out;
+      &:hover{
+        color: #ef8bd4;
+        outline: none;
+      }
       &:focus{
         color: black;
         outline: none;
@@ -289,13 +290,15 @@ header::before {
       font-size: 1em;
       font-weight: 600;
       border: none;
+      transition: all 1s ease-out;
+      &:hover{
+        color: #ef8bd4;
+        outline: none;
+      }
       &:focus{
         color: black;
         outline: none;
       }
-    }
-    &:hover{
-      overflow: visible;
     }
   }
 
@@ -1281,7 +1284,7 @@ section{
 
   #Competences{
     .Competences--flex--dev_pictureone{
-      width: 110px;
+      width: 210px;
       height: 210px;
       background-size: 210px, 180px;
     }

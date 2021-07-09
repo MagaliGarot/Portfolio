@@ -234,6 +234,72 @@ header::before{
   align-items: center;
   justify-content: center;
 
+  #burger{
+    display: none;
+    position: absolute;
+    // border-radius: 10px;
+    top: -390px;
+    right: 45px;
+    width: 5rem;
+    height: 6rem;
+    line-height: 2;
+    transform: translateY(10%);
+     /*invisible text*/
+     /*permet de couper ce qui dépasse*/
+    overflow: hidden;
+    /*TRANSITION*/
+    transition: all 0.3s ease-out;
+
+    .burger__icone{
+      color: white;
+      font-size: 3.8rem;
+      background: transparent;
+      border: none;
+      transition: all 1s ease-out;
+      &:hover{
+        color: #ef8bd4;
+        outline: none;
+      }
+      &:focus{
+        color: black;
+        outline: none;
+      }
+    }
+
+    .burger__text{
+      font-family: 'Lekton', sans-serif;
+      font-size: 1em;
+      text-align: right;
+      font-weight: 600;
+      color: white;
+      transition: all 1s ease-out;
+      &:hover{
+        color: #ef8bd4;
+        outline: none;
+      }
+      &:focus{
+        color: black;
+        outline: none;
+      }
+    }
+    #closeBurgerButton{
+      background: transparent;
+      color: white;
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      transition: all 1s ease-out;
+      &:hover{
+        color: #ef8bd4;
+        outline: none;
+      }
+      &:focus{
+        color: black;
+        outline: none;
+      }
+    }
+  }
+
   .Menu_link{
     height: 60px;
     width: 250px;
@@ -785,7 +851,7 @@ section{
   
   .Pied_icones{
     font-size: 4em;
-    color:#3bacc9;
+    color: white;
     transition: all 1s ease-out;
     margin-left: 50px;
 
@@ -1143,11 +1209,19 @@ section{
 
     /*----------- MENU -----------*/
 
-   #Menu{
-    display: none;
+  #Menu{
+
+    #burger{
+      display: inline-block;
+    }
+
+    .Menu_link{
+      display: none;
+    }
+
   }
 
-   .objectifText{
+  .objectifText{
       display: none;
   }
 

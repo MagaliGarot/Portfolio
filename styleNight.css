@@ -258,6 +258,83 @@ header::before {
           justify-content: center;
 }
 
+#Menu #burger {
+  display: none;
+  position: absolute;
+  top: -390px;
+  right: 45px;
+  width: 5rem;
+  height: 6rem;
+  line-height: 2;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  /*invisible text*/
+  /*permet de couper ce qui dépasse*/
+  overflow: hidden;
+  /*TRANSITION*/
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#Menu #burger .burger__icone {
+  color: white;
+  font-size: 3.8rem;
+  background: transparent;
+  border: none;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#Menu #burger .burger__icone:hover {
+  color: #ef8bd4;
+  outline: none;
+}
+
+#Menu #burger .burger__icone:focus {
+  color: black;
+  outline: none;
+}
+
+#Menu #burger .burger__text {
+  font-family: 'Lekton', sans-serif;
+  font-size: 1em;
+  text-align: right;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#Menu #burger .burger__text:hover {
+  color: #ef8bd4;
+  outline: none;
+}
+
+#Menu #burger .burger__text:focus {
+  color: black;
+  outline: none;
+}
+
+#Menu #burger #closeBurgerButton {
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#Menu #burger #closeBurgerButton:hover {
+  color: #ef8bd4;
+  outline: none;
+}
+
+#Menu #burger #closeBurgerButton:focus {
+  color: black;
+  outline: none;
+}
+
 #Menu .Menu_link {
   height: 60px;
   width: 250px;
@@ -831,7 +908,7 @@ section {
 
 #Contact .Pied_icones {
   font-size: 4em;
-  color: #3bacc9;
+  color: white;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   margin-left: 50px;
@@ -1169,7 +1246,10 @@ section {
     color: lightblue;
   }
   /*----------- MENU -----------*/
-  #Menu {
+  #Menu #burger {
+    display: inline-block;
+  }
+  #Menu .Menu_link {
     display: none;
   }
   .objectifText {
