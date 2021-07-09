@@ -13,7 +13,7 @@
         let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
         let _depth3 = `${50 - (_mouseX - _w) * 0.03}% ${50 - (_mouseY - _h) * 0.03}%`;
         let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-        console.log(x);
+        // console.log(x);
         elem.style.backgroundPosition = x;
     }
 
@@ -46,6 +46,15 @@
         document.getElementById("burger").style.cssText = "overflow: hidden;"; 
     });
 })();
+
+//Scroll
+// const scrollIcon = document.getElementById("imageProfil");
+// (function() {
+//     window.addEventListener('scroll', () => {
+//         console.log('scroll')
+//     });
+// })();
+
 
 //luciole
 //https://codepen.io/Mertl/pen/GexapP

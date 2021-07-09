@@ -576,9 +576,6 @@ section{
       outline: none;
     }
   }
-  // #accessibilityFalse{
-  //   display:none;
-  // }
   .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -762,6 +759,7 @@ section{
 
   .textGalerie{
     font-weight: 600;
+    padding-bottom: 30px;
   }
   
   /*----------Picture Carousel-------------*/
