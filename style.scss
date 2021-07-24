@@ -354,6 +354,7 @@ section{
   margin-right: auto;
   a{
     color:#8fe1f5;
+    outline: none;
     &:hover{
       color:#cc97a7;
     }
@@ -686,7 +687,7 @@ section{
     }
   }
 
-  .card__box__text__etc{
+  #card__box__text__etc{
     display: block;
     text-align: right;
     font-size: 1.6em;
@@ -740,7 +741,7 @@ section{
     height: 180px;
   }
 
-  .card:hover .card__box__text__etc{
+  .card:hover #card__box__text__etc{
     /* ... */
     display:none;
   }

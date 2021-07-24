@@ -387,6 +387,11 @@ section {
   margin-right: auto;
 }
 
+#espacewhite a {
+  color: #8fe1f5;
+  outline: none;
+}
+
 #espacewhite a:hover {
   color: #cc97a7;
 }
@@ -743,7 +748,7 @@ section {
   padding: 8px;
 }
 
-#Portfolio .card__box__text__etc {
+#Portfolio #card__box__text__etc {
   display: block;
   text-align: right;
   font-size: 1.6em;
@@ -796,7 +801,7 @@ section {
   height: 180px;
 }
 
-#Portfolio .card:hover .card__box__text__etc {
+#Portfolio .card:hover #card__box__text__etc {
   /* ... */
   display: none;
 }
