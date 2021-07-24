@@ -1,6 +1,6 @@
 // HOVER PARALLAX 
 //Documentation : codepen : https://codepen.io/oscicen/pen/zyJeJw
-(function() {
+
     document.addEventListener("mousemove", parallax);
     const elem = document.querySelector("#Formations");
 
@@ -17,11 +17,8 @@
         elem.style.backgroundPosition = x;
     }
 
-})();
 
-(function() {
-    const button = document.getElementById("accessibilityTrue");
-    button.addEventListener("click", function() {
+function accessibility() {
         document.getElementById("cardWorkOne").style.cssText = "height: 720px; margin-top: 0px"; 
         document.getElementById("cardWorkTwo").style.cssText = "height: 720px; margin-top: 0px";  
         document.getElementById("cardWorkThree").style.cssText = "height: 720px; margin-top: 0px"; 
@@ -30,30 +27,57 @@
         document.getElementById("cardWorkSix").style.cssText = "height: 720px; margin-top: 0px"; 
         document.getElementById("cardWorkSeven").style.cssText = "height: 720px; margin-top: 0px"; 
         document.getElementById("cardWorkHeight").style.cssText = "height: 720px; margin-top: 0px";
-    });
-})();
+}
 
-(function() {
-    const button = document.getElementById("burgerButton");
-    button.addEventListener("click", function() {
+function burgerMenu() {
         document.getElementById("burger").style.cssText = "overflow: visible;"; 
-    });
-})();
+}
 
-(function() {
-    const button = document.getElementById("closeBurgerButton");
-    button.addEventListener("click", function() {
+function closeBurger() {
         document.getElementById("burger").style.cssText = "overflow: hidden;"; 
-    });
-})();
+}
 
 //Scroll
-// const scrollIcon = document.getElementById("imageProfil");
-// (function() {
-//     window.addEventListener('scroll', () => {
-//         console.log('scroll')
-//     });
-// })();
+//https://codepen.io/m2rt/pen/zoRxEN
+
+
+window.addEventListener('scroll', function(){
+
+    console.log(window.innerHeight);
+    console.log(window.scrollY);
+    console.log(window.scroll);
+
+})
+
+
+/*  const scrollIcon = document.getElementById("imageProfil");
+ (function() {
+     window.addEventListener('scroll', () => {
+         console.log(scroll)
+     });
+ })(); */
+
+ /* window.addEventlistener("load", function() {
+    window.addEventListener("mousewheel", function scroll(event) {
+        window.removeEventListener("mousewheel", scroll);
+ 
+        setTimeout(function() {
+            window.addEventListener("mousewheel", scroll);
+        }, 1000);
+ 
+        var scroll = event.deltaY;
+        var scrollDown = scroll > 0;
+        var scrollUp = scroll < 0;
+         
+        if (scrollDown) {
+            // Faire quelque chose lorsque la fenêtre défile vers le bas
+            console.log("test un")
+        } else if (scrollUp) {
+            // Faire quelque chose lorsque la fenêtre défile vers le haut
+            console.log("test deux")
+        }
+    });
+}); */
 
 
 //luciole

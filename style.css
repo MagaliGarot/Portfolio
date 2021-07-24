@@ -385,6 +385,10 @@ section {
   margin-right: auto;
 }
 
+#espacewhite a {
+  color: #8fe1f5;
+}
+
 #espacewhite a:hover {
   color: #cc97a7;
 }
@@ -877,7 +881,7 @@ section {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 'Contact__container__titre' 'Pied' 'Contact__container__text';
+      grid-template-areas: 'Contact__container__titre' 'Pied' 'Contact__container__text';
 }
 
 #Contact .Contact__container__titre {

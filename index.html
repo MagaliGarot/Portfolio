@@ -44,7 +44,7 @@
             <div class="objectifText">
                 <strong>Objectif</strong>
                 <br>
-                Trouver un nouveau challenge comme
+                Relever un nouveau challenge comme
                 <strong>Web développeuse Junior</strong>.
                 <br>
                 Après une formation à 
@@ -54,13 +54,15 @@
                 <strong>vue.js</strong> 
                 et 
                 <strong>accessibilité web</strong>.
+                <br>
+                Je suis désormais à la recherche d'un emploi dans lequel m'investir et grandir. 
             </div>
         </header>
       
                <!-- MENU -->
             <nav id="Menu">
                 <div id="burger">
-                    <button aria-label="Burger menu" id="burgerButton" class="burger__icone">
+                    <button aria-label="Burger menu" id="burgerButton" onclick="burgerMenu()" class="burger__icone">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </button>
                     <br>
@@ -74,7 +76,7 @@
                     <br>
                     <a aria-label="Redirige vers Contact sur la home page" class="burger__text" href="#Contact">Contact</a> 
                     <br>
-                    <button aria-label="Fermer le menu burger" id="closeBurgerButton" href="#Contact">
+                    <button aria-label="Fermer le menu burger" onclick="closeBurger()" id="closeBurgerButton" href="#Contact">
                         <i class="far fa-times-circle"></i>
                     </button> 
                 </div>
@@ -90,8 +92,8 @@
         <main>
             <section class="Totalbox">
                 <div id="espacewhite">
-                    <h2> Voir mon CV (à venir)
-                        <a><i aria-hidden="true" aria-label="Ouvrir mon CV pdf" class="fas fa-file"></i></a>
+                    <h2> Voir mon CV 
+                        <a href="Images/CV-Web-developpeuse-Magali-Garot-web.pdf" targer="_blanck"><i aria-hidden="true" aria-label="Ouvrir mon CV pdf" class="fas fa-file"></i></a>
                     </h2>
                 </div>
                 <div id="Apropos">
@@ -111,7 +113,7 @@
                         <div class="NoDesktop">
                             <h2>Objectif </h2>
                             <p>
-                                Trouver un nouveau challenge comme
+                                Relever un nouveau challenge comme
                                 <strong>Web développeuse Junior</strong>.
                                 <br>
                                 Après une formation à 
@@ -121,27 +123,29 @@
                                 <strong>vue.js</strong> 
                                 et 
                                 <strong>accessibilité web</strong>.
+                                <br>
+                                Je suis désormais à la recherche d'un emploi dans lequel m'investir et grandir. 
                             </p>
                         </div>
                         <h2> À propos </h2>
                         <p id="Apropos_textone_top"> 
-                            Depuis toujours attirée par l’aspect visuel et la technologie, 
+                            Attirée depuis toujours par l’aspect visuel et la technologie, 
                             je me suis tournée très jeune vers le dessin et les programmes informatiques. 
                         </p>
                         <br>
                         <p class="Apropos_textone_bottom">
                             Bachelière en arts plastiques visuels et de l'espace (Saint-Luc Liège) depuis 2010, 
-                            j'ai réalisé des supports graphiques de tous types pour des ASBL, SRL, particuliers. 
+                            j'ai réalisé des supports graphiques de tous types pour des ASBL, entreprises, particuliers. 
                             Grâce à mon coup de crayon, 
-                            j'ai également été éditée chez plusieurs éditeurs en tant qu'illustratrice ou auteur.
+                            j'ai également été publiée chez plusieurs éditeurs en tant qu'illustratrice ou auteur.
                         <br>
                             J'ai aussi eu l'occasion de travailler comme, libraire, 
                             animatrice d'ateliers et employée administrative.
                         <br>
                         <br>
-                            Forte de ces expériences, j'ai eu envie de me reconvertir comme Web Développeuse, 
+                            Forte de ces expériences, j'ai désormais envie de me reconvertir comme Web Développeuse, 
                             un secteur qui m'attire depuis longtemps et dans lequel 
-                            je me réjouis de m'épanouir via un emploi.
+                            je me réjouis de trouver un emploi.
                         </p>
                         <br>
                         <br>
@@ -258,7 +262,7 @@
                 <!-- PORTFOLIO -->
                 <div id="Portfolio"> 
                     <h2> Travaux réalisés à BeCode </h2>
-                    <button aria-hidden="true" id="accessibilityTrue" class="accessibility" aria-hidden="true">
+                    <button aria-hidden="true" onclick="accessibility()" id="accessibilityTrue" class="accessibility" aria-hidden="true">
                         <i aria-hidden="true" class="fas fa-universal-access"></i>
                         Désactiver l'effet déroulant
                     </button>
