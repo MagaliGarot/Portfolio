@@ -31,7 +31,7 @@ Réalisation d'un Portfolio (projet personnel) en HTML, CSS et JavaScript en par
 
 ## 🖊 A propos :
 
-### 👩‍💻 Magali :
+Je suis en recherche d'un emploi de développeuse web dans lequel m’investir et grandir.
+Après une formation à BeCode Liège , dans le web développement, j'ai réalisé un stage de trois mois orienté vue.js et accessibilité web.
 
-Actuellement en formation à BeCode Liège, je me forme avec comme objectif de décrocher un emploi dans le web développement. 
 
