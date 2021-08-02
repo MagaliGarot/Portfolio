@@ -162,7 +162,7 @@ header::before{
   .icones_icones{
     font-size: 4em;
     color: white;
-    transition: all 1s ease-out;
+/*     transition: all 1s ease-out; */
     &:hover{
       color: #cc97a7;
     }
@@ -187,7 +187,7 @@ header::before{
     color: white;
     display: flex;
     justify-content: space-between;
-    transition: all 1s ease-out;
+  /*   transition: all 1s ease-out; */
     i{
       padding: 4px;
     }

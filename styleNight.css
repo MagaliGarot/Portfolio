@@ -167,8 +167,7 @@ header::before {
 .icones .icones_icones {
   font-size: 4em;
   color: white;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  /*     transition: all 1s ease-out; */
 }
 
 .icones .icones_icones:hover {
@@ -199,8 +198,7 @@ header::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  /*   transition: all 1s ease-out; */
 }
 
 .icones #nigthFalse i {
